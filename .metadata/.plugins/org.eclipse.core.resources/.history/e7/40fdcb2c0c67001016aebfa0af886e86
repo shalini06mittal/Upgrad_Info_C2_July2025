@@ -1,0 +1,10 @@
+package demo;
+
+public class TestAccount {
+
+	public static void main(String[] args) {
+		CurrentAccount a1 = new CurrentAccount();
+
+	}
+
+}
