@@ -1,0 +1,17 @@
+package demo;
+
+public class CurrentAccount extends Account {
+
+	private String Gstno;
+	private String businessType;
+	public CurrentAccount(int id, String name, double balance) {
+		// super
+		super(1,"",1000);
+		System.out.println("Curretn acc def constructor");
+	}
+	@Override
+	public void calculateInterestRat() {
+		
+		
+	}
+}

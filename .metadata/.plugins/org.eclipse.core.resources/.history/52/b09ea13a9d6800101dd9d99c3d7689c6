@@ -1,0 +1,41 @@
+package interfaces;
+
+class BubbleSort implements Sortable{
+	@Override
+	public void sort(int ...a) {
+		
+		System.out.println("Bubble sort logic");
+	}
+}
+public class TestSortable {
+
+	public static void main(String[] args) {
+		
+		Sortable ob = new BubbleSort();
+		
+		ob.sort(100,12,3,40);
+		
+		// anonymous inner class
+		ob = new Sortable(){
+			@Override
+			public void sort(int ...a) {
+				
+				System.out.println("Insertion sort logic");
+			}
+		};
+		ob.sort(3,2,5,7,3,2);
+		
+		ob = new Sortable(){
+			@Override
+			public void sort(int ...a) {
+				
+				System.out.println("heap sort logic");
+			}
+		};
+		ob.sort(3,2,5,7,3,2);
+		
+		// lambda expressions
+		
+	}
+
+}

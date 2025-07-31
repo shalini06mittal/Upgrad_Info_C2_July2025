@@ -3,15 +3,29 @@ package demo;
 public class CurrentAccount extends Account {
 
 	private String Gstno;
-	private String businessType;
-	public CurrentAccount() {
+	
+	public CurrentAccount(int id, String name, String gst) {
 		// super
-		super(1,"",1000);
-		System.out.println("Curretn acc def constructor");
+		super(id,name);
+		this.Gstno = gst;
+		System.out.println("Curretn acc 3 param constructor");
+	}
+	public CurrentAccount(int id, String name, double balance,String gst) {
+		// super
+		super(id, name, balance);
+		this.Gstno = gst;
+		System.out.println("Curretn acc 4 param constructor");
 	}
 	@Override
 	public void calculateInterestRat() {
-		
+		System.out.println("Current account cal IR");
 		
 	}
+	public String getGstno() {
+		return Gstno;
+	}
+	public void setGstno(String gstno) {
+		Gstno = gstno;
+	}
+	
 }

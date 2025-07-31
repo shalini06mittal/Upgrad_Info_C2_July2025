@@ -1,0 +1,48 @@
+package streams;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class StreamDemo {
+
+	public static void main(String[] args) {
+		List<String> fruits = Arrays.asList("apple","banana","mango",
+				"strawberries","apricot");
+		
+		/**
+		 * 1. iterate over the list
+		 * 2. check for fruits starting with a
+		 * 3. convert them to uppercase and get a new list
+		 */
+		
+		List<String> fruitsWithA = new ArrayList<String>();
+		for(String fruit: fruits) {
+			if(fruit.startsWith("a"))
+				fruitsWithA.add(fruit);
+		}
+		
+		// streams API -> intermediate ( filter + chlorine ) returns a stream
+		// terminal -> turn on the tap -> return some concrete value
+		// streams once consumed are closed
+		
+		System.out.println("Streams start?");
+//		Stream<String> stream1 = fruits.stream();
+//		
+//		Stream<String> stream2 = stream1.filter(fruit ->{
+//			System.out.println("in filter "+fruit);
+//			return fruit.startsWith("a");
+//		});
+//		
+//		stream2.forEach(f -> System.out.println("Starts with A "+f));
+		
+		fruits.stream().filter(fruit-> fruit.startsWith("a"))
+		.forEach(System.out::println);// method reference
+		
+		
+		
+		
+	}
+	
+}

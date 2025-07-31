@@ -2,8 +2,34 @@ package demo;
 
 public class TestAccount {
 
+	/**
+	 * parent class reference can point to child class object
+	 * parent class reference decides which methods can be called
+	 * the object decides, method of which class will be called
+	 * 
+	 * Account acc = new CurrentAccount();
+	 * 
+	 */
+	public static void displayInterestRate(Account acc)// acc = s1, acc=a1
+	{
+		acc.calculateInterestRat();
+		// downcasting
+		if(acc instanceof CurrentAccount)
+			{
+			CurrentAccount ob = (CurrentAccount) acc;
+			System.out.println(ob.getGstno());
+			}	
+	}
 	public static void main(String[] args) {
-		CurrentAccount a1 = new CurrentAccount();
+		/*
+		 * cannot create Account class object
+		 * 
+		 * Account -> CA, SA
+		 */
+		CurrentAccount a1 = new CurrentAccount(1, "Shalini", "AB87668686");
+		SavingsAccount s1 = new SavingsAccount();
+		displayInterestRate(a1);
+		displayInterestRate(s1);// upcasting
 		
 	}
 

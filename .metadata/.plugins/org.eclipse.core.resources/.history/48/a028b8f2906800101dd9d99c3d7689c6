@@ -1,0 +1,15 @@
+package demo;
+
+public class TestAccount {
+
+	public static void displayInterestRate(Account acc) {
+		
+	}
+	public static void main(String[] args) {
+		/*
+		 * cannot create Account class object
+		 */
+		
+	}
+
+}

@@ -1,0 +1,29 @@
+package collections;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetDemo {
+
+	public static void main(String[] args) {
+		Set<Integer> nos = new HashSet<Integer>();
+		nos.add(1);
+		nos.add(10);
+		nos.add(1);
+		nos.add(31);
+		nos.add(15);
+		nos.add(17);
+		nos.add(51);
+//		System.out.println(nos);
+//		for(Integer ob: nos) {
+//			System.out.println(ob + 10);
+//		}
+		
+		Employee e1 = new Employee(1, "Shalini","Mumbai");
+		Employee e2 = new Employee(1, "Shalini","Mumbai");
+		Employee e3 = new Employee(5, "Hemani","Delhi");
+		Set<Employee> set = new HashSet<E>();
+		
+	}
+
+}

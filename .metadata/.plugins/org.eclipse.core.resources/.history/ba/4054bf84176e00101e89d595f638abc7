@@ -1,0 +1,22 @@
+package streams;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamDemo {
+
+	public static void main(String[] args) {
+		List<String> fruits = Arrays.asList("apple","banana","mango",
+				"strawberries","apricot");
+		
+		/**
+		 * 1. iterator over the list
+		 * 2. check for fruits starting with a
+		 * 3. convert them to uppercase and get a new list
+		 */
+		
+		
+
+	}
+
+}

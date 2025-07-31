@@ -1,0 +1,32 @@
+package interfaces;
+
+
+interface Predicate{
+	public boolean filter(int no);
+}
+class  EvenNOs implements Predicate{
+	@Override
+	public boolean filter(int no) {
+		// TODO Auto-generated method stub
+		return no%2==0;
+	}
+}
+public class FilterNumbers {
+
+	
+	public static void display(int []arr, Predicate predicate) {
+		for(int no : arr) {
+			if(predicate.filter(no))
+				System.out.println(no);
+		}
+	}
+	public static void main(String[] args) {
+		java.util.function.Predicate<Integer> p= null;
+		// TODO Auto-generated method stub
+		int arr[] = {1,2,3,4,6,87,9,5,8,9};
+		// display even numbers
+		display(arr, no -> no%2==0); // lambda expressions
+		// display odd numbers
+		display(arr, no -> no%2!=0);
+	}
+}

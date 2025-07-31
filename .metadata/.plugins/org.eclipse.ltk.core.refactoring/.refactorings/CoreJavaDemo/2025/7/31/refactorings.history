@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;set&apos; in &apos;collections.SetDemo.main(...)&apos; to &apos;set1&apos;&#x0A;- Original project: &apos;CoreJavaDemo&apos;&#x0A;- Original element: &apos;collections.SetDemo.main(String[]).set&apos;&#x0A;- Renamed element: &apos;set&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;set&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;collections{SetDemo.java[SetDemo~main~\[QString;@set!689!724!703!705!QSet\&lt;QEmployee;&gt;;!0!false" name="set1" references="true" stamp="1753714482014" version="1.0"/>
+</session>

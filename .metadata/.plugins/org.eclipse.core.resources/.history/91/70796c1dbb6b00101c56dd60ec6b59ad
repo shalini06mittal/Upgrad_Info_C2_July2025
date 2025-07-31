@@ -1,0 +1,15 @@
+package collections;
+
+import java.util.Arrays;
+
+public class ListDemo {
+
+	public static void main(String[] args) {
+		// size of array is fixed
+		// same data types
+		
+		
+
+	}
+
+}

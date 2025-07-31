@@ -1,0 +1,8 @@
+package interfaces;
+
+@FunctionalInterface // that can have only 1 abstract method
+public interface Sortable {
+	// has only 1 abstract method
+	public void sort(int ...a);// 
+	public void filter(;)
+}

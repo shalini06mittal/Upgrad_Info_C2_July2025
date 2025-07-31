@@ -1,7 +1,12 @@
 package demo;
 
-public class SavingsAccount {
+public class SavingsAccount extends Account {
 
+	@Override
+	public void calculateInterestRat() {
+		System.out.println("Calcuate IR Savings Account");
+		
+	}
 	
 	
 }

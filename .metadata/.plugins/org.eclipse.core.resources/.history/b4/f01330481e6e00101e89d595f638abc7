@@ -1,0 +1,83 @@
+package streams;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
+import java.util.function.Function;
+import java.util.stream.Collectors;
+
+public class StreamDemo {
+
+	public static void main(String[] args) {
+		List<String> fruits = Arrays.asList("apple","banana","mango",
+				"strawberries","apricot");
+		
+		/**
+		 * 1. iterate over the list
+		 * 2. check for fruits starting with a
+		 * 3. convert them to uppercase and get a new list
+		 */
+		
+		List<String> fruitsWithA = new ArrayList<String>();
+		for(String fruit: fruits) {
+			if(fruit.startsWith("a"))
+				fruitsWithA.add(fruit);
+		}
+		
+		// streams API -> intermediate ( filter + chlorine ) returns a stream
+		// terminal -> turn on the tap -> return some concrete value
+		// streams once consumed are closed
+		
+		System.out.println("Streams start?");
+//		Stream<String> stream1 = fruits.stream();
+//		
+//		Stream<String> stream2 = stream1.filter(fruit ->{
+//			System.out.println("in filter "+fruit);
+//			return fruit.startsWith("a");
+//		});
+//		
+//		stream2.forEach(f -> System.out.println("Starts with A "+f));
+		
+//		fruits.stream().filter(fruit-> fruit.startsWith("a"))
+//		.forEach(System.out::println);// method reference
+		
+		List<String> fruitsStartsWithA = fruits.stream()
+				.filter(fruit-> fruit.startsWith("a"))
+				.map(fruit -> fruit.toUpperCase())
+		.collect(Collectors.toList());
+		// method reference
+		
+//		System.out.println(fruitsStartsWithA);
+		
+		List<Integer> fruitsAplhaCount = fruits.stream()
+				.map(fruit -> fruit.length())
+		.collect(Collectors.toList());
+		// method reference
+		
+//		System.out.println(fruitsAplhaCount);
+		
+		
+		Map<String, Integer> fruitsAplhaCount1 = fruits.stream()
+		//.collect(Collectors.toMap(fruit -> fruit, fruit -> fruit.length()));
+		.collect(Collectors.toMap(Function.identity(), fruit -> fruit.length()));
+		
+//		System.out.println(fruitsAplhaCount1);
+		
+		
+		List<Integer> nos = Arrays.asList(1,2,3,4,5);
+		// 1+2+3+4+5
+//		int sum = 0;
+//		for(int n: nos) {
+//			sum+=n;
+//		}
+//		System.out.println(sum);
+		
+		System.out.println(nos.stream().reduce(0, (v1, v2)->{
+			System.out.println(v1+" : "+v2);
+			return v1+v2;
+		}));
+		
+	}
+	
+}

@@ -1,0 +1,17 @@
+package interfaces;
+
+public class Order {
+
+	Payment payment;
+	
+	public Order() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Order(Payment payment) {
+		super();
+		this.payment = payment;
+	}
+	
+	
+}

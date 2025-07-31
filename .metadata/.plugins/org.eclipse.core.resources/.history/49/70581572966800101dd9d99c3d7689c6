@@ -1,0 +1,10 @@
+package interfaces;
+
+public class CreditCard  implements Payment{
+
+	@Override
+	public void pay() {
+		// TODO Auto-generated method stub
+		
+	}
+}

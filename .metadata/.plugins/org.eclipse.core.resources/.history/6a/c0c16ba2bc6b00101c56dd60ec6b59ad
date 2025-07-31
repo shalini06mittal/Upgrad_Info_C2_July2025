@@ -1,0 +1,53 @@
+package collections;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class ListDemo {
+
+	public static void main(String[] args) {
+		// size of array is fixed
+		// same data types
+		
+		List nos = new ArrayList();
+		System.out.println(nos.size());
+		nos.add(10);
+		nos.add(10);
+		nos.add("10");
+		nos.add(true);
+		nos.add('a');
+		System.out.println(nos.size());
+		System.out.println(nos);
+		nos.remove(1);
+		System.out.println(nos.size());
+		System.out.println(nos);
+		System.out.println("---------------------------------------\n");
+//		for(int i=0;i<nos.size();i++) {
+//			int x = (int) nos.get(i);
+//			System.out.println(x+10);
+//		}
+		// generics - diamond bracket
+		List<Integer> colors = new ArrayList<Integer>();
+		scores.add(10);
+		scores.add(13);
+		scores.add(11);
+		scores.add(4);
+		scores.add(9);
+		for(Integer ob: scores) {
+			System.out.println(ob + 10);
+		}
+		
+		List<String> colors = new ArrayList<>();
+		colors.add("Red");
+		colors.add("Green");
+		colors.add("Blue");
+		colors.add("Yellow");
+		colors.add("Black");
+		for(String ob: colors) {
+			System.out.println(ob.toUpperCase());
+		}
+
+	}
+
+}

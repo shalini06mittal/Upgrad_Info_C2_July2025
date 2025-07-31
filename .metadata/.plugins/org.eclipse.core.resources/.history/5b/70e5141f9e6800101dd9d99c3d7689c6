@@ -1,0 +1,21 @@
+package interfaces;
+
+interface Predicate{
+	public boolean filter(int no);
+}
+
+public class FilterNumbers {
+
+	
+	public static void display(int []arr, Predicate predicate) {
+		for(int no : arr) {
+			if(predicate.filter(no))
+				System.out.println(no);
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

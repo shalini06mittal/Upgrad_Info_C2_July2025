@@ -1,0 +1,35 @@
+package streams;
+
+import java.util.List;
+
+public class ProgrammerStream {
+
+	
+	public static List<Programmer> getData(){
+		return List.of(
+				new Programmer("P1", List.of("Java","C"), "Mumbai"),
+				new Programmer("P2", List.of("HTML","CSS","React"), "Mumbai"),
+				new Programmer("P3", List.of("Python","Flask"), "Mumbai"),
+				new Programmer("P4", List.of("PHP","C","HTML","CSS"), "Mumbai")
+				);
+				
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		getData().stream()
+		.map(programmer -> programmer.getName())
+		.forEach(System.out::println);
+
+		System.out.println();
+		long c = getData().stream()
+		.flatMap(programmer -> programmer.getSkills().stream())
+		.count();
+		//.forEach(skill -> System.out.println(skill.toUpperCase()));
+		
+		System.out.println(c);
+		// to get distinct counts , do not count duplicates
+
+	}
+
+}

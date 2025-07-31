@@ -56,6 +56,7 @@ public abstract class Account {
 	}
 
 	public abstract void calculateInterestRat();
+	
 	@Override
 	public String toString() {
 		return "Account [accid=" + accid + ", name=" + name + ", balance=" + balance + "]";

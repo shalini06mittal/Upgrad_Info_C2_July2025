@@ -1,0 +1,7 @@
+package interfaces;
+
+public  interface Payment {
+	
+	public abstract void pay();
+
+}

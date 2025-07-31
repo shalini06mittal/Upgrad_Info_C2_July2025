@@ -1,0 +1,12 @@
+package interfaces;
+
+public class TestPayment {
+
+	public static void main(String[] args) {
+		Payment payment = new CreditCard();
+		Order order = new Order(payment);
+		order.checkout();
+
+	}
+
+}
