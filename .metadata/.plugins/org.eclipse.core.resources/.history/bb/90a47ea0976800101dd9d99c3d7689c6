@@ -1,8 +1,0 @@
-package interfaces;
-
-public  interface Payment {
-	
-	int x;// public static and final
-	public abstract void pay();
-
-}

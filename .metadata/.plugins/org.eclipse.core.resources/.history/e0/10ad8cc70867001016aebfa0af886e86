@@ -1,7 +1,0 @@
-package demo;
-
-public class CurrentAccount {
-
-	private String Gstno;
-	private String businessType;
-}
