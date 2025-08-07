@@ -1,0 +1,48 @@
+package threads;
+
+public class ThreadDemo {
+
+	/**
+	 * threads - light weight process that runs within a process
+	 * 
+	 * sequence based
+	 * conditional based
+	 * 
+	 * customer data :
+	 * 1. filter data by city : shipping system
+	 * 2. filter data by most bought items : analytical system
+	 * 
+	 * single threaded appns - main ( parent thread )
+	 *  threads : (spawn child threads )
+	 *  run in parallel 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		System.out.println(Thread.currentThread().getName());
+		EvenThread t1 = new EvenThread();
+		t1.setName("Even1");
+		
+		EvenThread t2 = new EvenThread();
+		t2.setName("Even2");
+		t2.start(); // 2 4
+		t1.start(); // 2/6
+		
+		OddThread ob1 = new OddThread();
+		Thread t3 = new Thread(ob1);
+		t3.setName("Odd");
+		t3.start();
+		
+		
+//		for(char ch='A';ch<='E';ch++) {
+//			System.out.println(Thread.currentThread().getName()+" : "+ ch);
+//			try {
+//				Thread.sleep(500);
+//			} catch (InterruptedException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//		}
+//		System.out.println("main finished");
+	}
+
+}

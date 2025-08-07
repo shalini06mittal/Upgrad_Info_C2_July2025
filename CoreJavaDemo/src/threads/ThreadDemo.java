@@ -18,6 +18,10 @@ public class ThreadDemo {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+		Runtime runtime = Runtime.getRuntime();
+		
+		System.out.println(runtime.availableProcessors());
+		
 		System.out.println(Thread.currentThread().getName());
 		EvenThread t1 = new EvenThread();
 		t1.setName("Even1");
@@ -26,6 +30,13 @@ public class ThreadDemo {
 		t2.setName("Even2");
 		t2.start(); // 2 4
 		t1.start(); // 2/6
+		
+		OddThread ob1 = new OddThread();
+		Thread t3 = new Thread(ob1);
+		t3.setName("Odd");
+		t3.start();
+		
+		
 //		for(char ch='A';ch<='E';ch++) {
 //			System.out.println(Thread.currentThread().getName()+" : "+ ch);
 //			try {

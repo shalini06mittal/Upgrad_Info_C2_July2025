@@ -1,0 +1,13 @@
+package threads;
+
+public class DecorateThread extends Thread{
+
+	public DecorateThread(String name) {
+		super(name)
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

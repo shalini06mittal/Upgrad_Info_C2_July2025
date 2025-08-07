@@ -1,0 +1,20 @@
+package threads;
+
+public class MessageDecorator {
+
+	private StringBuffer buffer = new StringBuffer();
+	
+	
+	public StringBuffer getBuffer() {
+		return buffer;
+	}
+
+
+	public void decorate(String name) {
+		
+		buffer.append("*** ");
+		buffer.append(name);
+		Thread.sleep(500);
+		buffer.append(" ###\n");
+	}
+}

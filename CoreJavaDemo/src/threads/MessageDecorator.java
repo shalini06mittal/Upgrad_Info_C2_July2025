@@ -1,0 +1,36 @@
+package threads;
+
+public class MessageDecorator {
+
+	private StringBuffer buffer = new StringBuffer();
+	
+	
+	public StringBuffer getBuffer() {
+		return buffer;
+	}
+
+	// If a thread enters the decorate method, all other threads should wait
+	public synchronized void decorate(String name) {
+		System.out.println(Thread.currentThread().getName()+ " starts decorating...");
+		buffer.append("*** ");
+		buffer.append(name);
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		buffer.append(" ###\n");
+		System.out.println(Thread.currentThread().getName()+ " ends decoration");
+	}
+	public void m1() {
+		System.out.println(Thread.currentThread().getName()+ " in m1");
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(Thread.currentThread().getName()+ " out m1");
+	}
+}

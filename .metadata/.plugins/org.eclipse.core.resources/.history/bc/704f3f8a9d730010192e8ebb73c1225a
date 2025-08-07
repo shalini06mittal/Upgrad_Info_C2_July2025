@@ -1,0 +1,18 @@
+package threads;
+
+public class DecorateThread extends Thread{
+
+	MessageDecorator decorator;
+	
+	public DecorateThread(String name, MessageDecorator decorator) {
+		super(name);
+		this.decorator = decorator
+		start();
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

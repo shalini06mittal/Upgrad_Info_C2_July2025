@@ -1,0 +1,23 @@
+package threads;
+
+public class DecorateThread extends Thread{
+
+	MessageDecorator decorator;
+	
+	public DecorateThread(String name, MessageDecorator decorator) {
+		super(name);
+		this.decorator = decorator;
+		start();
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MessageDecorator ob = new MessageDecorator();
+		ob.decorate("Shalini");
+		System.out.println(ob.getBuffer());
+		ob.decorate("Chirag");
+		System.out.println(ob.getBuffer()
+	}
+
+}

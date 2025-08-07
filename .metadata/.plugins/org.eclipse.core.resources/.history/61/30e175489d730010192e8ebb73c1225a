@@ -1,0 +1,15 @@
+package threads;
+
+public class MessageDecorator {
+
+	StringBuffer buffer = new StringBuffer();
+	
+	public void decorate(String name) {
+		
+		
+		
+		System.out.print("***");
+		
+		System.out.print(" ###");
+	}
+}
