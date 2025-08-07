@@ -1,0 +1,19 @@
+package p1;
+
+public class C {
+
+	private int pri;
+	int def;
+	protected int pro;
+	public int pub;
+	
+	C(){
+		System.out.println(pri);
+		System.out.println(def);
+		System.out.println(pro);
+		System.out.println(pub);
+	}
+	public static void main(String[] args) {
+		new C();
+	}
+}

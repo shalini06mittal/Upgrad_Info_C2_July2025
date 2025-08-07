@@ -1,0 +1,63 @@
+package exceptions;
+
+public class ExceptionHandlingDemo {
+
+	public static void calculate(int no) {
+		if(no<=0)
+		{
+			throw new RuntimeException("cannot calculate square root");
+		}
+		else {
+			System.out.println(Math.sqrt(no));
+		}
+	}
+	public static void main(String[] args) throws InterruptedException {
+		
+		calculate(10);
+		try {
+		calculate(0);
+		}catch(RuntimeException e) {
+			System.out.println(e.getLocalizedMessage());
+		}
+		calculate(16);
+		
+//		System.out.println("starting");
+//		int a =12, b=0;
+//		Thread.sleep(20000);
+//		System.out.println(a+b);
+//		try// try executing below statement 
+//		{
+//			System.out.println(a/b);
+//		}
+//		catch(Exception e)// this is the blocl that catches exception thrown by try block
+//		{
+//			
+//			System.out.println("Error occurred "+e.getMessage());
+//		}
+//		System.out.println(a-b);
+//		System.out.println(a*b);
+//		
+//		String arr[] = {"12","34","0","abc","67","2"};
+//		for(String s : arr) {
+//			try {
+//				int x = Integer.parseInt(s);
+//				System.out.println(100/x);
+//				if(x==12)
+//				System.out.println(arr[8]);
+//			}
+//			catch(ArithmeticException e) {
+//				System.out.println("Cannot divide by zero");
+//				System.out.println(e.getMessage());
+//			}
+//			catch(NumberFormatException e) {
+//				System.out.println("Cannot vonvert string to integer");
+//				System.out.println(e.getMessage());
+//			}
+//			catch(Exception e) {
+//				System.out.println("Somethign went wrong please contact admin");
+//			}
+//		}
+
+	}
+
+}

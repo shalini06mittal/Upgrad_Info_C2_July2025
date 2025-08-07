@@ -1,0 +1,11 @@
+package p2;
+
+public class E {
+
+	E(){
+		System.out.println(pri);
+		System.out.println(def);
+		System.out.println(pro);
+		System.out.println(pub);
+	}
+}

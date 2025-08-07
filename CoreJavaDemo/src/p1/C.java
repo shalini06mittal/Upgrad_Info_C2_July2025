@@ -1,0 +1,14 @@
+package p1;
+
+public class C extends A{
+
+	
+	
+	C(){
+		//System.out.println(pri);
+		System.out.println(def);
+		System.out.println(pro);
+		System.out.println(pub);
+	}
+	
+}
