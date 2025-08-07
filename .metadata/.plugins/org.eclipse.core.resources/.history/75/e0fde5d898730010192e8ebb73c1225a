@@ -1,0 +1,11 @@
+package threads;
+
+/**
+ * 1. Extend Thread class
+ * 2. Override the run() : task that a thread will perform
+ * 3. create object of your thread class
+ * 4. call start
+ */
+public class MyThread {
+
+}

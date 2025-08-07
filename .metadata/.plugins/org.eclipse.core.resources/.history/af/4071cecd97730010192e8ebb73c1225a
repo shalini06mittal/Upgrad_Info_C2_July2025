@@ -1,0 +1,21 @@
+package threads;
+
+public class ThreadDemo {
+
+	/**
+	 * threads - light weight process that runs within a process
+	 * 
+	 * sequence based
+	 * conditional based
+	 * 
+	 * customer data :
+	 * 1. filter data by city : shipping system
+	 * 2. filter data by most bought items : analytical system 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
