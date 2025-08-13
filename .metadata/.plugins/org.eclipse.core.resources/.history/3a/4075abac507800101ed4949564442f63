@@ -1,0 +1,15 @@
+package testing;
+
+
+public class MathematicalTest {
+
+	public void testAddReturnsResult() {
+		Mathematical mathematical = new Mathematical();
+		
+		int expected = 30;
+		int actual = mathematical.add(10, 20);
+		
+		// assertions
+	}
+	
+}
