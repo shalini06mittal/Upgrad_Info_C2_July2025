@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MathematicalTest.testSqrtThrowsException" project="CoreJavaDemo" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="testing.MathematicalTest" time="0.006" displayname="MathematicalTest" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]">
+    <testcase name="testSqrtThrowsException" classname="testing.MathematicalTest" time="0.006" displayname="testSqrtThrowsException()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testSqrtThrowsException()]"/>
+  </testsuite>
+</testrun>

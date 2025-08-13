@@ -1,16 +1,9 @@
 package testing;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.condition.DisabledOnJre;
-import org.junit.jupiter.api.condition.EnabledOnJre;
-import org.junit.jupiter.api.condition.JRE;
-import org.junit.jupiter.api.function.Executable;
 // DO NOT FORGET TO ADD JUNIT5 LIBRARY IN THE PATH
 public class MathematicalTest {
 	Mathematical mathematical;
@@ -23,11 +16,6 @@ public class MathematicalTest {
 		 mathematical.setN2(20);
 	}
 	
-	@AfterEach
-	public void tearDown() {
-		System.out.println("after every test case");
-		mathematical = null;
-	}
 	@Test
 	public void testAddReturnsResult() {
 		
@@ -86,7 +74,6 @@ public class MathematicalTest {
 //		
 //	}
 	@Test
-	@Disabled
 	public void testSqrtReturnsResult() throws Exception {
 		System.out.println("sqrt");
 		//Mathematical mathematical = new Mathematical();
@@ -95,14 +82,6 @@ public class MathematicalTest {
 		
 		// assertions
 		assertEquals(expected, actual);
-	}
-	@Test
-	//@DisabledOnJre(value = JRE.JAVA_17)
-	@EnabledOnJre(value = JRE.JAVA_17)
-	public void testSqrtThrowsException() throws Exception {
-		assertThrows(Exception.class, ()-> mathematical.sqrt(0));
-		// assertions
-		
 	}
 	
 }

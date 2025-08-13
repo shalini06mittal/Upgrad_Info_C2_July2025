@@ -3,7 +3,6 @@ package testing;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -23,9 +22,7 @@ public class MathematicalTest {
 		 mathematical.setN2(20);
 	}
 	
-	@AfterEach
 	public void tearDown() {
-		System.out.println("after every test case");
 		mathematical = null;
 	}
 	@Test
