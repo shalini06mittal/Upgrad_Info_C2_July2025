@@ -19,10 +19,8 @@ public class MathematicalTest {
 	@Test
 	public void testAddReturnsResult() {
 		
-		System.out.println("test add");
-		int expected = 100;
-		mathematical.setN1(30);
-		mathematical.setN2(70);
+		
+		int expected = 30;
 		int actual = mathematical.add();
 		
 		// assertions
@@ -31,8 +29,8 @@ public class MathematicalTest {
 	}
 	@Test
 	public void testSubReturnsResult() {
-		//Mathematical mathematical = new Mathematical();
-		System.out.println("test sub");
+		Mathematical mathematical = new Mathematical();
+		
 		int expected = 10;
 		int actual = mathematical.sub();
 		
@@ -64,8 +62,8 @@ public class MathematicalTest {
 //	}
 	@Test
 	public void testSqrtReturnsResult() throws Exception {
-		System.out.println("sqrt");
-		//Mathematical mathematical = new Mathematical();
+		
+		Mathematical mathematical = new Mathematical();
 		int expected = 4;
 		double actual = mathematical.sqrt(16);
 		

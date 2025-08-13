@@ -16,11 +16,11 @@ public class Mathematical {
 		// TODO Auto-generated method stub
 		return n1+n2;
 	}
-	public int sub() {
+	public int sub(int i, int j) {
 		// TODO Auto-generated method stub
-		if(n1>n2)
-			return n1-n2;
-		return n2-n1;
+		if(i>j)
+			return i-j;
+		return j-i;
 	}
 //	public int add(int i, int j) {
 //		// TODO Auto-generated method stub

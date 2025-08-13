@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MathematicalTest" project="CoreJavaDemo" tests="3" started="3" failures="1" errors="0" ignored="0">
+  <testsuite name="testing.MathematicalTest" time="0.016" displayname="MathematicalTest" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]">
+    <testcase name="testAddReturnsResult" classname="testing.MathematicalTest" time="0.011" displayname="testAddReturnsResult()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testAddReturnsResult()]"/>
+    <testcase name="testSubReturnsResult" classname="testing.MathematicalTest" time="0.004" displayname="testSubReturnsResult()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testSubReturnsResult()]">
+      <failure>
+        <expected>10</expected>
+        <actual>0</actual>
+        org.opentest4j.AssertionFailedError: expected: &lt;10&gt; but was: &lt;0&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:531)
+	at testing.MathematicalTest.testSubReturnsResult(MathematicalTest.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+
+      </failure>
+    </testcase>
+    <testcase name="testSqrtReturnsResult" classname="testing.MathematicalTest" time="0.001" displayname="testSqrtReturnsResult()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testSqrtReturnsResult()]"/>
+  </testsuite>
+</testrun>

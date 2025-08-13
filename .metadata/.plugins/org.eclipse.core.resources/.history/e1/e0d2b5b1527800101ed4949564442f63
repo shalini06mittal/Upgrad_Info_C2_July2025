@@ -12,26 +12,16 @@ public class Mathematical {
 		this.n2 = n2;
 	}
 	
-	public int add() {
+	public int add(int i, int j) {
 		// TODO Auto-generated method stub
-		return n1+n2;
+		return i+j;
 	}
-	public int sub() {
+	public int sub(int i, int j) {
 		// TODO Auto-generated method stub
-		if(n1>n2)
-			return n1-n2;
-		return n2-n1;
+		if(i>j)
+			return i-j;
+		return j-i;
 	}
-//	public int add(int i, int j) {
-//		// TODO Auto-generated method stub
-//		return i+j;
-//	}
-//	public int sub(int i, int j) {
-//		// TODO Auto-generated method stub
-//		if(i>j)
-//			return i-j;
-//		return j-i;
-//	}
 	
 	public double sqrt(int no) throws Exception {
 		if(no<=0)

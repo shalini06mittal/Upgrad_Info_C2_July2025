@@ -1,0 +1,33 @@
+package testing;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
+// DO NOT FORGET TO ADD JUNIT5 LIBRARY IN THE PATH
+public class MathematicalTest {
+
+	@Test
+	public void testAddReturnsResult() {
+		Mathematical mathematical = new Mathematical();
+		
+		int expected = 30;
+		int actual = mathematical.add(10, 20);
+		
+		// assertions
+		
+		assertEquals(expected, actual);
+		
+	}
+	@Test
+	public void testSqrtReturnsResult() throws Exception {
+		
+		Mathematical mathematical = new Mathematical();
+		
+		int expected = 4;
+		double actual = mathematical.sqrt(16);
+		
+		// assertions
+		assertEquals(expected, actual);
+	}
+	
+}
