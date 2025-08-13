@@ -1,0 +1,15 @@
+package database;
+
+public class TestDB {
+
+	public static void main(String[] args) {
+		//MyConnection.connect();
+		
+		CustomerDatabase database = new CustomerDatabase();
+		//database.insertCustomer(new Customer("shalini","shalini@gmail.com","shalini123"));
+		System.out.println(database.getLastInsertedCustomer());
+		
+
+	}
+
+}
