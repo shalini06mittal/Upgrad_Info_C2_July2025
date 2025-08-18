@@ -2186,3 +2186,60 @@ org.eclipse.core.runtime.CoreException:
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 !SUBENTRY 2 unknown 8 1 2025-08-13 20:19:47.822
 !MESSAGE 
+!SESSION 2025-08-18 19:31:37.337 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Shalini/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.jee.product -keyring /Users/Shalini/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-18 19:31:39.418
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-18 19:31:45.912
+!MESSAGE Logback config file: /Users/Shalini/Desktop/InfosysWS/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-08-18 20:04:50.795
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2025-08-18 20:04:50.797
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-08-18 20:04:50.797
+!MESSAGE The project description file (.project) for 'CoreJavaDemo' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2025-08-18 20:04:50.797
+!MESSAGE The project description file (.project) for 'JavaWithoutSpring' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SESSION 2025-08-18 20:04:52.735 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Shalini/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.jee.product -keyring /Users/Shalini/.eclipse_keyring -data /Users/Shalini/Desktop/InfosysWS
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-18 20:04:54.349
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-18 20:04:55.473
+!MESSAGE Logback config file: /Users/Shalini/Desktop/InfosysWS/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.1.20240411-1122.xml
+!SESSION 2025-08-18 20:05:21.334 -----------------------------------------------
+eclipse.buildId=4.33.0.20240905-0613
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=aarch64, WS=cocoa, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/Shalini/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch aarch64 -product org.eclipse.epp.package.jee.product -keyring /Users/Shalini/.eclipse_keyring
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-18 20:05:23.337
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-08-18 20:05:32.804
+!MESSAGE Logback config file: /Users/Shalini/Desktop/InfosysWS/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-08-18 20:05:40.266
+!MESSAGE An internal error occurred during: "Deferred Early Start".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.IExtensionRegistry.getConfigurationElementsFor(String)" because "extensionRegistry" is null
+	at org.eclipse.oomph.internal.ui.EarlyStart.run(EarlyStart.java:114)
+	at org.eclipse.oomph.internal.ui.EarlyStart$1.run(EarlyStart.java:98)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

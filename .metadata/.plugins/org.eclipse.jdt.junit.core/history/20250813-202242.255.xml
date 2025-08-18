@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="MathematicalTest" project="CoreJavaDemo" tests="3" started="3" failures="0" errors="0" ignored="0">
-  <testsuite name="testing.MathematicalTest" time="0.016" displayname="MathematicalTest" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]">
-    <testcase name="testAddReturnsResult" classname="testing.MathematicalTest" time="0.013" displayname="testAddReturnsResult()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testAddReturnsResult()]"/>
-    <testcase name="testSubReturnsResult" classname="testing.MathematicalTest" time="0.001" displayname="testSubReturnsResult()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testSubReturnsResult()]"/>
-    <testcase name="testSqrtReturnsResult" classname="testing.MathematicalTest" time="0.002" displayname="testSqrtReturnsResult()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testSqrtReturnsResult()]"/>
-  </testsuite>
-</testrun>

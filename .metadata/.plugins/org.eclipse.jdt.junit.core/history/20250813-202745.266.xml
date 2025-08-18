@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="MathematicalTest" project="CoreJavaDemo" tests="4" started="4" failures="0" errors="0" ignored="0">
-  <testsuite name="testing.MathematicalTest" time="0.016" displayname="MathematicalTest" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]">
-    <testcase name="testSubReturnsResultWhenN2Greater" classname="testing.MathematicalTest" time="0.011" displayname="testSubReturnsResultWhenN2Greater()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testSubReturnsResultWhenN2Greater()]"/>
-    <testcase name="testAddReturnsResult" classname="testing.MathematicalTest" time="0.002" displayname="testAddReturnsResult()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testAddReturnsResult()]"/>
-    <testcase name="testSqrtReturnsResult" classname="testing.MathematicalTest" time="0.001" displayname="testSqrtReturnsResult()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testSqrtReturnsResult()]"/>
-    <testcase name="testSqrtThrowsException" classname="testing.MathematicalTest" time="0.001" displayname="testSqrtThrowsException()" uniqueid="[engine:junit-jupiter]/[class:testing.MathematicalTest]/[method:testSqrtThrowsException()]"/>
-  </testsuite>
-</testrun>
