@@ -20,8 +20,13 @@ public class RandomTokenGenerator implements ITokenGenerator {
 	}
 
 	public int getOrigin() { return origin; } 
+	
+	@Value("${origin}")
 	public void setOrigin(int origin) { this.origin = origin; } 
-	public int getBound() { return bound; } 
+	
+	public int getBound() { return bound; }
+	
+	@Value("${bound}")
 	public void setBound(int bound) { this.bound = bound; }
 	@Override
 	public String generateToken() {
