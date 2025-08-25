@@ -50,6 +50,15 @@ public class SpringBootDemoApplication {
 		System.out.println(serviceImpl.getClass().getName());
 		service.applyNow();
 		serviceImpl.applyForChequeBook(102);
+		
+		serviceImpl.balance(234);
+		
+		try {
+			service.applyThen();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			//e.printStackTrace();
+		}
 	}
 
 }
