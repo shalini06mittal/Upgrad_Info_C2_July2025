@@ -6,6 +6,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
+import com.demo.SpringBootDemo.aop.CustomerServiceImpl;
+import com.demo.SpringBootDemo.aop.EmpService;
 import com.demo.SpringBootDemo.service.BankService;
 import com.demo.SpringBootDemo.service.ITokenGenerator;
 import com.demo.SpringBootDemo.service.RandomTokenGenerator;
@@ -40,7 +42,14 @@ public class SpringBootDemoApplication {
 //		service.getTokenValue();
 //		service.getTokenValue();
 //		service.getTokenValue();
+		
+		EmpService service = context.getBean(EmpService.class);
+		System.out.println(service.getClass().getName());
 
+		CustomerServiceImpl serviceImpl = context.getBean(CustomerServiceImpl.class);
+		System.out.println(serviceImpl.getClass().getName());
+		service.applyNow();
+		serviceImpl.applyForChequeBook(102);
 	}
 
 }
