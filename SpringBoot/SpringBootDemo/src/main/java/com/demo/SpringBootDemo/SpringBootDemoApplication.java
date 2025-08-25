@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 import com.demo.SpringBootDemo.service.BankService;
 import com.demo.SpringBootDemo.service.ITokenGenerator;
@@ -11,6 +12,7 @@ import com.demo.SpringBootDemo.service.RandomTokenGenerator;
 
 // is an opinionated framework
 @SpringBootApplication
+@EnableAspectJAutoProxy
 public class SpringBootDemoApplication {
 
 	public static void main(String[] args) {
@@ -31,13 +33,13 @@ public class SpringBootDemoApplication {
 //		
 //		System.out.println(gen.generateToken());
 		
-		BankService service = context.getBean(BankService.class);
-		System.out.println(service.getTokenGenerator());
-		System.out.println(service.getPaymentService());
-		service.getTokenValue();
-		service.getTokenValue();
-		service.getTokenValue();
-		service.getTokenValue();
+//		BankService service = context.getBean(BankService.class);
+//		System.out.println(service.getTokenGenerator());
+//		System.out.println(service.getPaymentService());
+//		service.getTokenValue();
+//		service.getTokenValue();
+//		service.getTokenValue();
+//		service.getTokenValue();
 
 	}
 
