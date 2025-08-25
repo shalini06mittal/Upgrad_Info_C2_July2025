@@ -49,10 +49,11 @@ public class SpringBootDemoApplication {
 		CustomerServiceImpl serviceImpl = context.getBean(CustomerServiceImpl.class);
 		System.out.println(serviceImpl.getClass().getName());
 		service.applyNow();
-		serviceImpl.applyForChequeBook(102);
 		
-		serviceImpl.balance(234);
-		
+//		serviceImpl.applyForChequeBook(102);
+//		
+//		serviceImpl.balance(234);
+//		
 		try {
 			service.applyThen();
 		} catch (Exception e) {
