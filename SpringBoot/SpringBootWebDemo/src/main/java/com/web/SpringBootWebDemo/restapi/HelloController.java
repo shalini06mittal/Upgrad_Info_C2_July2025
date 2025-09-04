@@ -8,34 +8,38 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+// http://localhost:8080
 @RestController // @Controller + @ResponseBody
-@RequestMapping("/")
+@RequestMapping("/api")
 public class HelloController {
-//http://localhost:8080/greet
+	//http://localhost:8080/api
 	@GetMapping("/greet")
 	public String greeter() {
 		return "Good Morning";
 	}
 	
-	//http://localhost:8080/?name=shalini&city=Mumbai
+	//http://localhost:8080/api
+	//http://localhost:8080/api?name=shalini&city=Mumbai
+	// ? -> optional paramter : filtering options
 	@GetMapping
-	public String greeter(String name, 
+	public String greeter(@RequestParam(name = "username") String name, 
 			
-		@RequestParam(required = false) String city) {
-		if(name !=null)
-			return "Good Morning "+name.toUpperCase() +" "+city;
+		@RequestParam(required = true) String city) {
+		if(name !=null || city != null)
+			return "Good Morning "+ (name == null ? "" :name.toUpperCase()) +" "+city;
 		return "Good Morning Guest";
 	}
+	
 	@PostMapping
 	public String post() {
-		return "Good evening";
+		return "Good evening - POSt";
 	}
 	@PutMapping
 	public String put() {
-		return "Good afternnon";
+		return "Good afternnon - PUT";
 	}
 	@DeleteMapping
 	public String delete() {
-		return "Good night";
+		return "Good night - DELETE";
 	}
 }
