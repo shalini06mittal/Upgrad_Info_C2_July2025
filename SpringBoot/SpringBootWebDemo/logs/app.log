@@ -1,0 +1,1 @@
+2025-09-08T20:25:46.174+05:30  WARN 4407 --- [SpringBootWebDemo] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "ex1"]

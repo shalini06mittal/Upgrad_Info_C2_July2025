@@ -4,6 +4,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.web.SpringBootWebDemo.constants.AppConstants;
 import com.web.SpringBootWebDemo.entity.Book;
+import com.web.SpringBootWebDemo.exception.MyGlobalExceptionHandler;
 import com.web.SpringBootWebDemo.service.BookService;
 
 import jakarta.validation.Valid;
@@ -28,12 +31,15 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/books/ex")
 public class BookRestControllerExceptionHandler {
+	
+	Logger logger = LoggerFactory.getLogger(BookRestControllerExceptionHandler.class);
 
 	@Autowired
 	private BookService bookService;
 
 	@GetMapping(produces = {"application/json","application/xml"})
 	public List<Book> getBooks(@RequestParam(required  = false) String author){ 
+		logger.info("Fetching Books ");
 		if(author==null)  
 			return bookService.getAllBooks();
 		return bookService.getBooksByAuthor(author);

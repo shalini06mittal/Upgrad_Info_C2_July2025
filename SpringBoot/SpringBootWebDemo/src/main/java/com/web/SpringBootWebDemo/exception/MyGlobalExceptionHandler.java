@@ -2,8 +2,11 @@ package com.web.SpringBootWebDemo.exception;
 
 import java.util.HashMap;
 import java.util.Map;
+
 import java.util.stream.Collectors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.ObjectError;
@@ -19,6 +22,8 @@ import io.swagger.v3.oas.annotations.Hidden;
 @ControllerAdvice
 @Hidden
 public class MyGlobalExceptionHandler {
+	
+	
 
 	public MyGlobalExceptionHandler() {
 		System.out.println("my global exception handler");
