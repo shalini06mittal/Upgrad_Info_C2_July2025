@@ -1,11 +1,18 @@
 package com.web.SpringBootWebDemo.entity;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+
 public class Book {
 
 	private int bookid; 
+	@NotNull(message = "Title must not be empty")
 	private String title; 
 	private String author; 
 	private String desc; 
+	@Positive(message = "Price must be positive")
+	@Min(50)
 	private double price;
 	
 	public Book() {

@@ -22,6 +22,8 @@ import com.web.SpringBootWebDemo.constants.AppConstants;
 import com.web.SpringBootWebDemo.entity.Book;
 import com.web.SpringBootWebDemo.service.BookService;
 
+import jakarta.validation.Valid;
+
 
 @RestController
 @RequestMapping("/books/ex")
@@ -53,7 +55,7 @@ public class BookRestControllerExceptionHandler {
 	}
 
 	@PostMapping 
-	public ResponseEntity<Object> addBook(@RequestBody Book book){ 
+	public ResponseEntity<Object> addBook(@Valid @RequestBody Book book){ 
 		System.out.println("Book "+book); 
 		Map<String, Object> map = new HashMap<>(); 
 		try { 
