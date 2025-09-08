@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,8 +24,8 @@ import com.web.SpringBootWebDemo.service.BookService;
 
 
 @RestController
-@RequestMapping("/books")
-public class BookRestController {
+@RequestMapping("/books/ex")
+public class BookRestControllerExceptionHandler {
 
 	@Autowired
 	private BookService bookService;
@@ -36,30 +37,19 @@ public class BookRestController {
 		return bookService.getBooksByAuthor(author);
 	}
 
-	//http://localhost:8081/books/1
-	//	@GetMapping("/{id}")
-	//	public Book getBookById(@PathVariable int id){
-	//		return bookService.getBookById(id);
-	//	}
+	@ExceptionHandler(RuntimeException.class)
+	public ResponseEntity<Object> handleClassException(RuntimeException e){
+		System.out.println("Runtime exception handled at class level");
+		Map<String, Object> map = new HashMap<>();
+		map.put(AppConstants.STATUS, AppConstants.FAILURE);
+		map.put(AppConstants.ERROR	, e.getMessage());
+		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(map);
+	}
 	
 
 	@GetMapping("/{id}")
-	public ResponseEntity<Object> getBookById(@PathVariable int id){
-
-		Map<String, Object> map = new HashMap<>();
-		try {
-
-			Book book =	bookService.getBookById(id);
-			map.put(AppConstants.STATUS, AppConstants.SUCCESS);
-			map.put("book", book);
-			return ResponseEntity.ok(map);
-
-		}catch(RuntimeException e) {
-			map.put(AppConstants.STATUS, AppConstants.FAILURE);
-			map.put(AppConstants.ERROR	, e.getMessage());
-			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(map);
-		}
-		
+	public ResponseEntity<Book> getBookById(@PathVariable int id){
+			return ResponseEntity.ok(bookService.getBookById(id));
 	}
 
 	@PostMapping 
