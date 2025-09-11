@@ -525,3 +525,135 @@ Caused by: java.lang.Error: Unresolved compilation problem:
 2025-09-11T19:07:36.612+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
 2025-09-11T19:07:36.616+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.243 seconds (process running for 261.257)
 2025-09-11T19:07:36.617+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:21:33.097+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-09-11T19:21:33.105+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-28] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:21:33.109+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:21:33.180+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:21:33.180+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:21:33.307+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:21:33.308+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:21:33.308+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:21:33.315+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:21:33.315+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 134 ms
+2025-09-11T19:21:33.435+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:21:33.436+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:21:33.441+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:21:33.445+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.28 seconds (process running for 1098.086)
+2025-09-11T19:21:33.446+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:21:43.959+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T19:21:43.961+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-32] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:21:43.964+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:21:44.021+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:21:44.021+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:21:44.144+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:21:44.144+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:21:44.144+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:21:44.149+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:21:44.149+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 127 ms
+2025-09-11T19:21:44.262+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:21:44.262+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:21:44.269+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:21:44.273+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.262 seconds (process running for 1108.914)
+2025-09-11T19:21:44.274+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:21:49.731+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T19:21:49.733+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-36] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:21:49.736+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:21:49.795+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:21:49.795+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:21:49.890+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:21:49.891+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:21:49.891+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:21:49.896+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:21:49.896+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 100 ms
+2025-09-11T19:21:50.009+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:21:50.010+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:21:50.017+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:21:50.021+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.236 seconds (process running for 1114.662)
+2025-09-11T19:21:50.021+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:22:20.726+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-09-11T19:22:20.734+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-40] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:22:20.739+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:22:20.813+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:22:20.813+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:22:20.922+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:22:20.923+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:22:20.923+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:22:20.928+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:22:20.928+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 113 ms
+2025-09-11T19:22:21.028+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:22:21.029+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:22:21.035+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:22:21.038+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.236 seconds (process running for 1145.679)
+2025-09-11T19:22:21.039+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:22:27.505+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T19:22:27.508+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-44] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:22:27.511+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:22:27.567+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:22:27.567+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:22:27.659+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:22:27.659+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:22:27.659+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:22:27.664+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:22:27.664+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 96 ms
+2025-09-11T19:22:27.769+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:22:27.770+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:22:27.775+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:22:27.779+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.22 seconds (process running for 1152.42)
+2025-09-11T19:22:27.780+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:22:49.418+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T19:22:49.420+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-48] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:22:49.423+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:22:49.482+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:22:49.482+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:22:49.579+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:22:49.579+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:22:49.579+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:22:49.583+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:22:49.584+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 101 ms
+2025-09-11T19:22:49.670+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:22:49.671+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:22:49.676+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:22:49.680+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.207 seconds (process running for 1174.321)
+2025-09-11T19:22:49.681+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:23:21.482+05:30  INFO 59118 --- [SpringBootWebDemo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:23:21.484+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:31:11.513+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 72682 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:31:11.515+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:31:11.538+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-11T19:31:11.538+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-11T19:31:12.177+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:31:12.184+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:31:12.185+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:31:12.206+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:31:12.206+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 668 ms
+2025-09-11T19:31:12.813+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:31:12.817+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/manage'
+2025-09-11T19:31:12.853+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:31:12.864+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 1.571 seconds (process running for 1.909)
+2025-09-11T19:31:32.019+05:30  INFO 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T19:31:32.019+05:30  INFO 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T19:31:32.022+05:30  INFO 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-09-11T19:31:32.077+05:30  WARN 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource actuator.]
+2025-09-11T19:31:32.147+05:30  WARN 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:31:37.317+05:30  WARN 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:31:39.982+05:30  WARN 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:31:48.100+05:30  WARN 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:32:25.143+05:30  INFO 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 118 ms
+2025-09-11T19:34:09.382+05:30  WARN 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:34:36.371+05:30  WARN 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:34:52.140+05:30  WARN 72682 --- [SpringBootWebDemo] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:35:13.838+05:30  INFO 72682 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T19:35:13.849+05:30  INFO 72682 --- [SpringBootWebDemo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:35:13.863+05:30  INFO 72682 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:35:13.936+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 72682 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:35:13.936+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:35:14.099+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:35:14.100+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:35:14.100+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:35:14.109+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:35:14.110+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 173 ms
+2025-09-11T19:35:14.292+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:35:14.293+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoints beneath base path '/manage'
+2025-09-11T19:35:14.302+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:35:14.306+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.383 seconds (process running for 243.353)
+2025-09-11T19:35:14.308+05:30  INFO 72682 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
