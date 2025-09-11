@@ -1,1 +1,527 @@
-2025-09-08T20:25:46.174+05:30  WARN 4407 --- [SpringBootWebDemo] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'int'; For input string: "ex1"]
+2025-09-11T18:54:25.299+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 54961 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T18:54:25.303+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T18:54:25.450+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T18:54:25.451+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T18:54:25.451+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T18:54:25.458+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T18:54:25.459+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 154 ms
+2025-09-11T18:54:25.633+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T18:54:25.635+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-09-11T18:54:25.642+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T18:54:25.647+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.363 seconds (process running for 21.762)
+2025-09-11T18:54:25.648+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T18:54:37.671+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T18:54:37.672+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T18:54:37.673+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-09-11T18:54:38.008+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-5] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 124 ms
+2025-09-11T18:54:43.534+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T18:55:25.484+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T18:55:57.954+05:30  INFO 54961 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T18:55:57.959+05:30  INFO 54961 --- [SpringBootWebDemo] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T18:55:57.963+05:30  INFO 54961 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T18:55:58.025+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 54961 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T18:55:58.025+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T18:55:58.172+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T18:55:58.172+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T18:55:58.172+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T18:55:58.178+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T18:55:58.178+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 152 ms
+2025-09-11T18:55:58.391+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T18:55:58.392+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/actuator'
+2025-09-11T18:55:58.402+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T18:55:58.407+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.397 seconds (process running for 114.523)
+2025-09-11T18:55:58.410+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   BeansEndpointAutoConfiguration#beansEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.beans.BeansEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   CachesEndpointAutoConfiguration#cachesEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.cache.CachesEndpoint; SearchStrategy: all) found bean 'cachesEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.cache.CachesEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConditionsReportEndpointAutoConfiguration#conditionsReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.autoconfigure.condition.ConditionsReportEndpoint; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ConfigurationPropertiesReportEndpointAutoConfiguration#configurationPropertiesReportEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpoint; SearchStrategy: all) found bean 'configurationPropertiesReportEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.context.properties.ConfigurationPropertiesReportEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   EnvironmentEndpointAutoConfiguration#environmentEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.env.EnvironmentEndpoint; SearchStrategy: all) found bean 'environmentEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.env.EnvironmentEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   HttpExchangesEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   InfoEndpointAutoConfiguration#infoEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.info.InfoEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LogFileWebEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LogFileWebEndpointAutoConfiguration#logFileWebEndpoint matched:
+      - Log File found logging.file.name logs/app.log (LogFileWebEndpointAutoConfiguration.LogFileCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LogFileWebEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   LoggersEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   LoggersEndpointAutoConfiguration#loggersEndpoint matched:
+      - Logging System enabled (LoggersEndpointAutoConfiguration.OnEnabledLoggingSystemCondition)
+      - @ConditionalOnBean (types: org.springframework.boot.logging.LoggingSystem; SearchStrategy: all) found bean 'springBootLoggingSystem'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.logging.LoggersEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   MappingsEndpointAutoConfiguration.ServletWebConfiguration.SpringMvcConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) found bean 'dispatcherServlet' (OnBeanCondition)
+
+   MetricsEndpointAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.micrometer.core.annotation.Timed' (OnClassCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   MetricsEndpointAutoConfiguration#metricsEndpoint matched:
+      - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) found bean 'simpleMeterRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.metrics.MetricsEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SbomEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SbomEndpointAutoConfiguration#sbomEndpointWebExtension matched:
+      - @ConditionalOnBean (types: org.springframework.boot.actuate.sbom.SbomEndpoint; SearchStrategy: all) found bean 'sbomEndpoint'; @ConditionalOnMissingBean (types: org.springframework.boot.actuate.sbom.SbomEndpointWebExtension; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ScheduledTasksEndpointAutoConfiguration#scheduledTasksEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.scheduling.ScheduledTasksEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ThreadDumpEndpointAutoConfiguration matched:
+      - @ConditionalOnAvailableEndpoint marked as exposed by a 'management.endpoints.web.exposure' property (OnAvailableEndpointCondition)
+
+   ThreadDumpEndpointAutoConfiguration#dumpEndpoint matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.actuate.management.ThreadDumpEndpoint; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AuditEventsEndpointAutoConfiguration#auditEventsEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.audit.AuditEventRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.audit.AuditEventRepository (OnBeanCondition)
+
+   HttpExchangesEndpointAutoConfiguration#httpExchangesEndpoint:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository; SearchStrategy: all) did not find any beans of type org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository (OnBeanCondition)
+
+   MappingsEndpointAutoConfiguration.ReactiveWebConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.DispatcherHandler' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-09-11T18:56:03.913+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T18:56:03.914+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T18:56:03.918+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-09-11T18:56:03.977+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T18:56:17.483+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T18:56:43.890+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource actuator/lothreaddumpggers.]
+2025-09-11T18:56:43.939+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T18:56:46.540+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T18:57:19.042+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T18:57:37.805+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T18:58:12.945+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T18:59:51.061+05:30  INFO 54961 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T18:59:51.071+05:30  INFO 54961 --- [SpringBootWebDemo] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T18:59:51.074+05:30  INFO 54961 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T18:59:51.145+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 54961 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T18:59:51.146+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T18:59:51.289+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T18:59:51.290+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T18:59:51.290+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T18:59:51.298+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T18:59:51.298+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 151 ms
+2025-09-11T18:59:51.430+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T18:59:51.431+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T18:59:51.437+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T18:59:51.441+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.31 seconds (process running for 347.556)
+2025-09-11T18:59:51.442+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:00:05.816+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T19:00:05.817+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T19:00:05.823+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2025-09-11T19:00:05.841+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource actuator/beans.]
+2025-09-11T19:00:05.921+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:00:10.878+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:00:48.396+05:30  INFO 54961 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T19:00:48.406+05:30  INFO 54961 --- [SpringBootWebDemo] [Thread-15] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:00:48.409+05:30  INFO 54961 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:00:48.472+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 54961 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:00:48.472+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:00:48.592+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:00:48.593+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:00:48.593+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:00:48.599+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:00:48.599+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 126 ms
+2025-09-11T19:00:48.716+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:00:48.717+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:00:48.725+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:00:48.729+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.271 seconds (process running for 404.844)
+2025-09-11T19:00:48.730+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:00:54.950+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T19:00:54.951+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T19:00:54.953+05:30  INFO 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-09-11T19:00:55.017+05:30  WARN 54961 --- [SpringBootWebDemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:01:45.111+05:30  INFO 54961 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 12 class path changes (0 additions, 0 deletions, 12 modifications)
+2025-09-11T19:01:45.121+05:30  INFO 54961 --- [SpringBootWebDemo] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:01:45.125+05:30  INFO 54961 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:01:45.205+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 54961 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:01:45.205+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:01:45.342+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:01:45.342+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:01:45.342+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:01:45.348+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:01:45.348+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 140 ms
+2025-09-11T19:01:45.463+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:01:45.464+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:01:45.471+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:01:45.475+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.282 seconds (process running for 461.59)
+2025-09-11T19:01:45.476+05:30  INFO 54961 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:01:46.713+05:30  INFO 54961 --- [SpringBootWebDemo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:01:46.715+05:30  INFO 54961 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:02:11.488+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 58569 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:02:11.489+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:02:11.513+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-11T19:02:11.513+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-11T19:02:12.145+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:02:12.153+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:02:12.154+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:02:12.175+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:02:12.175+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 661 ms
+2025-09-11T19:02:12.843+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:02:12.846+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:02:12.878+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:02:12.888+05:30  INFO 58569 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 1.629 seconds (process running for 1.887)
+2025-09-11T19:02:16.703+05:30  INFO 58569 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T19:02:16.703+05:30  INFO 58569 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T19:02:16.705+05:30  INFO 58569 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-09-11T19:02:16.857+05:30  WARN 58569 --- [SpringBootWebDemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:02:21.414+05:30  WARN 58569 --- [SpringBootWebDemo] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:02:22.041+05:30  WARN 58569 --- [SpringBootWebDemo] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:02:40.250+05:30  WARN 58569 --- [SpringBootWebDemo] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:02:57.732+05:30  INFO 58569 --- [SpringBootWebDemo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:02:57.739+05:30  INFO 58569 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:03:15.815+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:03:15.816+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:03:15.839+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-11T19:03:15.839+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-11T19:03:16.455+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:03:16.462+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:03:16.462+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:03:16.486+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:03:16.486+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 647 ms
+2025-09-11T19:03:17.168+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:03:17.172+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:03:17.210+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:03:17.220+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 1.607 seconds (process running for 1.852)
+2025-09-11T19:03:19.773+05:30  INFO 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T19:03:19.773+05:30  INFO 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T19:03:19.774+05:30  INFO 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-11T19:03:19.904+05:30  WARN 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:04:11.134+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-09-11T19:04:11.144+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:04:11.153+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:04:11.209+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:04:11.210+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:04:11.368+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:04:11.369+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:04:11.369+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:04:11.375+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:04:11.375+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 164 ms
+2025-09-11T19:04:11.567+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:04:11.568+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:04:11.577+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:04:11.581+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.388 seconds (process running for 56.213)
+2025-09-11T19:04:11.583+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:06:49.615+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T19:06:49.623+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:06:49.631+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:06:49.681+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:06:49.681+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:06:49.812+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:06:49.812+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:06:49.812+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:06:49.818+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:06:49.819+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 137 ms
+2025-09-11T19:06:49.834+05:30  WARN 59118 --- [SpringBootWebDemo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'internetHealthIndicator' defined in file [/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes/com/web/SpringBootWebDemo/actuator/InternetHealthIndicator.class]: Failed to instantiate [com.web.SpringBootWebDemo.actuator.InternetHealthIndicator]: Constructor threw exception
+2025-09-11T19:06:49.834+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-09-11T19:06:49.839+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-11T19:06:49.848+05:30 ERROR 59118 --- [SpringBootWebDemo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'internetHealthIndicator' defined in file [/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes/com/web/SpringBootWebDemo/actuator/InternetHealthIndicator.class]: Failed to instantiate [com.web.SpringBootWebDemo.actuator.InternetHealthIndicator]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.5.jar:3.5.5]
+	at com.web.SpringBootWebDemo.SpringBootWebDemoApplication.main(SpringBootWebDemoApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.5.jar:3.5.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.web.SpringBootWebDemo.actuator.InternetHealthIndicator]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.10.jar:6.2.10]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.web.SpringBootWebDemo.actuator.InternetHealthIndicator.<init>(InternetHealthIndicator.java:42) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.10.jar:6.2.10]
+	... 26 common frames omitted
+
+2025-09-11T19:06:56.357+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:06:56.357+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:06:56.482+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:06:56.482+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:06:56.482+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:06:56.488+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:06:56.488+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 129 ms
+2025-09-11T19:06:56.498+05:30  WARN 59118 --- [SpringBootWebDemo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'internetHealthIndicator' defined in file [/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes/com/web/SpringBootWebDemo/actuator/InternetHealthIndicator.class]: Failed to instantiate [com.web.SpringBootWebDemo.actuator.InternetHealthIndicator]: Constructor threw exception
+2025-09-11T19:06:56.499+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-09-11T19:06:56.505+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-11T19:06:56.506+05:30 ERROR 59118 --- [SpringBootWebDemo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'internetHealthIndicator' defined in file [/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes/com/web/SpringBootWebDemo/actuator/InternetHealthIndicator.class]: Failed to instantiate [com.web.SpringBootWebDemo.actuator.InternetHealthIndicator]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.5.jar:3.5.5]
+	at com.web.SpringBootWebDemo.SpringBootWebDemoApplication.main(SpringBootWebDemoApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.5.jar:3.5.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.web.SpringBootWebDemo.actuator.InternetHealthIndicator]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.10.jar:6.2.10]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", delete this token
+
+	at com.web.SpringBootWebDemo.actuator.InternetHealthIndicator.<init>(InternetHealthIndicator.java:42) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.10.jar:6.2.10]
+	... 26 common frames omitted
+
+2025-09-11T19:07:04.012+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:07:04.013+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:07:04.134+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:07:04.134+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:07:04.134+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:07:04.140+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:07:04.140+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 126 ms
+2025-09-11T19:07:04.151+05:30  WARN 59118 --- [SpringBootWebDemo] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'internetHealthIndicator' defined in file [/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes/com/web/SpringBootWebDemo/actuator/InternetHealthIndicator.class]: Failed to instantiate [com.web.SpringBootWebDemo.actuator.InternetHealthIndicator]: Constructor threw exception
+2025-09-11T19:07:04.151+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-09-11T19:07:04.156+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-09-11T19:07:04.157+05:30 ERROR 59118 --- [SpringBootWebDemo] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'internetHealthIndicator' defined in file [/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes/com/web/SpringBootWebDemo/actuator/InternetHealthIndicator.class]: Failed to instantiate [com.web.SpringBootWebDemo.actuator.InternetHealthIndicator]: Constructor threw exception
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1357) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1242) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.10.jar:6.2.10]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.5.jar:3.5.5]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.5.jar:3.5.5]
+	at com.web.SpringBootWebDemo.SpringBootWebDemoApplication.main(SpringBootWebDemoApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.5.5.jar:3.5.5]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.web.SpringBootWebDemo.actuator.InternetHealthIndicator]: Constructor threw exception
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:223) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:123) ~[spring-beans-6.2.10.jar:6.2.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.10.jar:6.2.10]
+	... 24 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	Syntax error on token "}", { expected
+
+	at com.web.SpringBootWebDemo.actuator.InternetHealthIndicator.<init>(InternetHealthIndicator.java:39) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:197) ~[spring-beans-6.2.10.jar:6.2.10]
+	... 26 common frames omitted
+
+2025-09-11T19:07:09.645+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:07:09.646+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:07:09.761+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:07:09.762+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:07:09.762+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:07:09.767+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:07:09.767+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 120 ms
+2025-09-11T19:07:09.917+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:07:09.918+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:07:09.931+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:07:09.935+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.313 seconds (process running for 234.575)
+2025-09-11T19:07:09.936+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:07:15.183+05:30  INFO 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T19:07:15.184+05:30  INFO 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T19:07:15.188+05:30  INFO 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-09-11T19:07:15.315+05:30  WARN 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:07:28.512+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T19:07:28.520+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-11] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:07:28.524+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:07:28.584+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:07:28.584+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:07:28.692+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:07:28.693+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:07:28.693+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:07:28.698+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:07:28.698+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 113 ms
+2025-09-11T19:07:28.823+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:07:28.824+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:07:28.830+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:07:28.834+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.261 seconds (process running for 253.474)
+2025-09-11T19:07:28.835+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-09-11T19:07:29.883+05:30  INFO 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-11T19:07:29.883+05:30  INFO 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-09-11T19:07:29.884+05:30  INFO 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-09-11T19:07:30.119+05:30  WARN 59118 --- [SpringBootWebDemo] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2025-09-11T19:07:36.322+05:30  INFO 59118 --- [SpringBootWebDemo] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-09-11T19:07:36.325+05:30  INFO 59118 --- [SpringBootWebDemo] [Thread-24] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-11T19:07:36.329+05:30  INFO 59118 --- [SpringBootWebDemo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-11T19:07:36.383+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Starting SpringBootWebDemoApplication using Java 17.0.8 with PID 59118 (/Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo/target/classes started by Shalini in /Users/Shalini/Desktop/InfosysWS/SpringBoot/SpringBootWebDemo)
+2025-09-11T19:07:36.383+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-09-11T19:07:36.489+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-09-11T19:07:36.489+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-11T19:07:36.489+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-11T19:07:36.494+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2025-09-11T19:07:36.494+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 110 ms
+2025-09-11T19:07:36.602+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-11T19:07:36.605+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoints beneath base path '/manage'
+2025-09-11T19:07:36.612+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-09-11T19:07:36.616+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] c.w.S.SpringBootWebDemoApplication       : Started SpringBootWebDemoApplication in 0.243 seconds (process running for 261.257)
+2025-09-11T19:07:36.617+05:30  INFO 59118 --- [SpringBootWebDemo] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
