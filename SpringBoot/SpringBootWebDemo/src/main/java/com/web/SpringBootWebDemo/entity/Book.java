@@ -1,18 +1,32 @@
 package com.web.SpringBootWebDemo.entity;
 
+import org.hibernate.annotations.ColumnDefault;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
-
+@Entity
 public class Book {
 
+	@Id
 	private int bookid; 
+	
 	@NotNull(message = "Title must not be empty")
 	private String title; 
-	private String author; 
+	
+	@Column(length = 100)//, columnDefinition = "varchar(100) default 'unknown'")
+	@ColumnDefault("'unknown author'")
+	private String author;
+	
+	@Column(name="description")
 	private String desc; 
+	
 	@Positive(message = "Price must be positive")
 	@Min(50)
+	
 	private double price;
 	
 	public Book() {
