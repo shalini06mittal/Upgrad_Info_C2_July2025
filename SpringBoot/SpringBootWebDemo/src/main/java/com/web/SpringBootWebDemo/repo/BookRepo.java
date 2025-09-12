@@ -18,4 +18,5 @@ public interface BookRepo extends JpaRepository<Book, Integer>{
 	// custom queries
 	public List<Book> findAllByAuthor(String author);
 	// get all the books greater than a certain price
+	public List<Book> findAllByPriceGreaterThan(double price);
 }

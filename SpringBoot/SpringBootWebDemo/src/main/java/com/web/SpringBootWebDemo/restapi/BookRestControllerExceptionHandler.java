@@ -45,6 +45,12 @@ public class BookRestControllerExceptionHandler {
 			return bookService.getAllBooks();
 		return bookService.getBooksByAuthor(author);
 	}
+	
+	@GetMapping(value = "/price", produces = "application/json")
+	public List<Book> getBooksByPrice(@RequestParam double price){ 
+		
+		return bookService.getBooksByPriceGreaterThan(price);
+	}
 
 //	@ExceptionHandler(RuntimeException.class)
 //	public ResponseEntity<Object> handleClassException(RuntimeException e){

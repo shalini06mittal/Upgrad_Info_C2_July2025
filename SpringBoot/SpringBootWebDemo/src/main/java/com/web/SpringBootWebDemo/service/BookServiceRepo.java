@@ -39,7 +39,7 @@ public class BookServiceRepo {
 	public Book updateBook(Book book){
 		if(!bookRepo.existsById(book.getBookid()))
 			throw new EntityNotFoundException("cannot update "+book.getBookid()+" does not exist");
-		
+
 		return bookRepo.save(book); 
 	} 
 	public boolean deleteBook(int id){ 
@@ -49,8 +49,12 @@ public class BookServiceRepo {
 		return true; 
 	} 
 	public List<Book> getBooksByAuthor(String author){ 
-		
+
 		return bookRepo.findAllByAuthor(author);
+	} 
+	public List<Book> getBooksByPriceGreaterThan(double price){ 
+
+		return bookRepo.findAllByPriceGreaterThan(price);
 	} 
 	public Book getBookById(int id){ 
 		if(!bookRepo.existsById(id)) 
