@@ -22,9 +22,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.web.SpringBootWebDemo.constants.AppConstants;
 import com.web.SpringBootWebDemo.entity.Book;
-import com.web.SpringBootWebDemo.exception.MyGlobalExceptionHandler;
-import com.web.SpringBootWebDemo.service.BookService;
+import com.web.SpringBootWebDemo.service.BookServiceRepo;
 
+import jakarta.persistence.EntityExistsException;
+import jakarta.persistence.EntityNotFoundException;
 import jakarta.validation.Valid;
 
 
@@ -35,7 +36,7 @@ public class BookRestControllerExceptionHandler {
 	Logger logger = LoggerFactory.getLogger(BookRestControllerExceptionHandler.class);
 
 	@Autowired
-	private BookService bookService;
+	private BookServiceRepo bookService;
 
 	@GetMapping(produces = {"application/json","application/xml"})
 	public List<Book> getBooks(@RequestParam(required  = false) String author){ 
@@ -45,7 +46,16 @@ public class BookRestControllerExceptionHandler {
 		return bookService.getBooksByAuthor(author);
 	}
 
-	@ExceptionHandler(RuntimeException.class)
+//	@ExceptionHandler(RuntimeException.class)
+//	public ResponseEntity<Object> handleClassException(RuntimeException e){
+//		System.out.println("Runtime exception handled at class level");
+//		Map<String, Object> map = new HashMap<>();
+//		map.put(AppConstants.STATUS, AppConstants.FAILURE);
+//		map.put(AppConstants.ERROR	, e.getMessage());
+//		return ResponseEntity.status(HttpStatus.NOT_FOUND).body(map);
+//	}
+	
+	@ExceptionHandler({EntityExistsException.class,EntityNotFoundException.class})
 	public ResponseEntity<Object> handleClassException(RuntimeException e){
 		System.out.println("Runtime exception handled at class level");
 		Map<String, Object> map = new HashMap<>();

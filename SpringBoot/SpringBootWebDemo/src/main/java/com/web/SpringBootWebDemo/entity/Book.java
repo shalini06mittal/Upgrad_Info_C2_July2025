@@ -1,17 +1,32 @@
 package com.web.SpringBootWebDemo.entity;
 
+import java.time.LocalDateTime;
+
 import org.hibernate.annotations.ColumnDefault;
+
+import com.web.SpringBootWebDemo.actuator.ReleaseNote;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 @Entity
+@Data
+@AllArgsConstructor 
+@NoArgsConstructor
+@Table(name="booktable")
 public class Book {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int bookid; 
 	
 	@NotNull(message = "Title must not be empty")
@@ -29,74 +44,74 @@ public class Book {
 	
 	private double price;
 	
-	public Book() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public Book(int bookid, String title, String author, String desc, double price) {
-		super();
-		this.bookid = bookid;
-		this.title = title;
-		this.author = author;
-		this.desc = desc;
-		this.price = price;
-	}
-
-	public Book(String title, String author, String desc, double price) {
-		super();
-		this.title = title;
-		this.author = author;
-		this.desc = desc;
-		this.price = price;
-	}
-
-	public int getBookid() {
-		return bookid;
-	}
-
-	public void setBookid(int bookid) {
-		this.bookid = bookid;
-	}
-
-	public String getTitle() {
-		return title;
-	}
-
-	public void setTitle(String title) {
-		this.title = title;
-	}
-
-	public String getAuthor() {
-		return author;
-	}
-
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-
-	public String getDesc() {
-		return desc;
-	}
-
-	public void setDesc(String desc) {
-		this.desc = desc;
-	}
-
-	public double getPrice() {
-		return price;
-	}
-
-	public void setPrice(double price) {
-		this.price = price;
-	}
-
-	@Override
-	public String toString() {
-		return "Book [bookid=" + bookid + ", title=" + title + ", author=" + author + ", desc=" + desc + ", price="
-				+ price + "]";
-	}
-	
-	
+//	public Book() {
+//		// TODO Auto-generated constructor stub
+//	}
+//
+//	public Book(int bookid, String title, String author, String desc, double price) {
+//		super();
+//		this.bookid = bookid;
+//		this.title = title;
+//		this.author = author;
+//		this.desc = desc;
+//		this.price = price;
+//	}
+//
+//	public Book(String title, String author, String desc, double price) {
+//		super();
+//		this.title = title;
+//		this.author = author;
+//		this.desc = desc;
+//		this.price = price;
+//	}
+//
+//	public int getBookid() {
+//		return bookid;
+//	}
+//
+//	public void setBookid(int bookid) {
+//		this.bookid = bookid;
+//	}
+//
+//	public String getTitle() {
+//		return title;
+//	}
+//
+//	public void setTitle(String title) {
+//		this.title = title;
+//	}
+//
+//	public String getAuthor() {
+//		return author;
+//	}
+//
+//	public void setAuthor(String author) {
+//		this.author = author;
+//	}
+//
+//	public String getDesc() {
+//		return desc;
+//	}
+//
+//	public void setDesc(String desc) {
+//		this.desc = desc;
+//	}
+//
+//	public double getPrice() {
+//		return price;
+//	}
+//
+//	public void setPrice(double price) {
+//		this.price = price;
+//	}
+//
+//	@Override
+//	public String toString() {
+//		return "Book [bookid=" + bookid + ", title=" + title + ", author=" + author + ", desc=" + desc + ", price="
+//				+ price + "]";
+//	}
+//	
+//	
 	
 	
 }
