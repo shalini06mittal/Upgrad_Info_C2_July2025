@@ -50,7 +50,7 @@ public class BookServiceRepo {
 	} 
 	public List<Book> getBooksByAuthor(String author){ 
 		
-		return null;
+		return bookRepo.findAllByAuthor(author);
 	} 
 	public Book getBookById(int id){ 
 		if(!bookRepo.existsById(id)) 

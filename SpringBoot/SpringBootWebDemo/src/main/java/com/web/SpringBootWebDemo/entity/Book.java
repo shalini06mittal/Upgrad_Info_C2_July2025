@@ -57,13 +57,13 @@ public class Book {
 //		this.price = price;
 //	}
 //
-//	public Book(String title, String author, String desc, double price) {
-//		super();
-//		this.title = title;
-//		this.author = author;
-//		this.desc = desc;
-//		this.price = price;
-//	}
+	public Book(String title, String author, String desc, double price) {
+		super();
+		this.title = title;
+		this.author = author;
+		this.desc = desc;
+		this.price = price;
+	}
 //
 //	public int getBookid() {
 //		return bookid;
