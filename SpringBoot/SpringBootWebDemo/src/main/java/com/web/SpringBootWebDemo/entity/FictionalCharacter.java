@@ -1,5 +1,7 @@
 package com.web.SpringBootWebDemo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -29,7 +31,8 @@ public class FictionalCharacter {
   private String house;
 
   @OneToOne(cascade = CascadeType.ALL)
-  @JoinColumn(name="wandid")
+  @JoinColumn(name="wandid")// tablename_primarykey
+  @JsonIgnoreProperties("fictionalCharacter")
   private Wand wand;
   
   @Column(length = 150, nullable = false)

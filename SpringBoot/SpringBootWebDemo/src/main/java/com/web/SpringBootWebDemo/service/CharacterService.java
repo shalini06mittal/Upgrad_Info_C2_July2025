@@ -1,8 +1,14 @@
 package com.web.SpringBootWebDemo.service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.web.SpringBootWebDemo.entity.FictionalCharacter;
@@ -84,10 +90,32 @@ public class CharacterService {
     }
 
     public FictionalCharacter getCharacterByWandId(int wandid){
-//        if(!wandRepo.existsById(wandid))
-//            throw new EntityNotFoundException("cannot fetch as wand with id "+wandid+" does not exist");
-//        Wand wand = wandRepo.findById(wandid).get();
-        return null;//wand.getCharacter();
+        if(!wandRepo.existsById(wandid))
+            throw new EntityNotFoundException("cannot fetch as wand with id "+wandid+" does not exist");
+        Wand wand = wandRepo.findById(wandid).get();
+        
+        return wand.getFictionalCharacter();
+    }
+    /**
+     * 
+     * 100 records -> size of records per page = 10
+     * pages = 10
+     * page 1 = 0- 9
+     */
+    
+    public Map<String, Object> getNextCharacters(Integer pageno, Integer size){
+    	Pageable pageable = PageRequest.of(pageno, size, Sort.by("name"));
+    	
+    	Page<FictionalCharacter> page = characterRepo.findAll(pageable);
+    	
+    	Map<String, Object> map = new HashMap<String, Object>();
+    	map.put("Current",page.getNumber());
+    	map.put("Count",page.getNumberOfElements());
+    	map.put("Total Count",page.getTotalElements());
+    	map.put("characters", page.getContent());
+    	map.put("Total page", page.getTotalPages());
+    	return map;
+    	
     }
 }
 

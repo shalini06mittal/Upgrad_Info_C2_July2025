@@ -40,7 +40,7 @@ public class CharacterController {
     @Autowired
     private CharacterService characterService;
 
-    @GetMapping
+    @GetMapping(produces = "application/json")
     public List<FictionalCharacter> getAllCharacters(@RequestParam(defaultValue = "all") String house){
         logger.info("GET All Characters for house {}", house);
         if(house.equals("all")) {
@@ -50,6 +50,14 @@ public class CharacterController {
            List<FictionalCharacter> ob = characterService.getCharacterByHouse(house);
            return ob;
         }
+    }
+    
+    @GetMapping(value="page", produces = "application/json")
+    public Map<String, Object> getAllCharactersPagination(
+    		@RequestParam(defaultValue = "0") Integer page, 
+    		@RequestParam(defaultValue = "10") Integer size){
+        
+    	return characterService.getNextCharacters(page, size);
     }
     @PostMapping()
     public ResponseEntity<Object> addCharacter(@RequestBody FictionalCharacter character){
@@ -62,7 +70,7 @@ public class CharacterController {
             return ResponseEntity.badRequest().body(errorMap);
         }
     }
-    @GetMapping("/id/{id}")
+    @GetMapping(value="/id/{id}", produces = "application/json")
     public ResponseEntity<Object> getCharacterById(@PathVariable int id){
         try {
             FictionalCharacter ob = characterService.getCharacterById(id);
@@ -73,7 +81,7 @@ public class CharacterController {
             return ResponseEntity.badRequest().body(errorMap);
         }
     }
-    @GetMapping("/name/{name}")
+    @GetMapping(value="/name/{name}",produces = "application/json")
     public ResponseEntity<Object> getCharacterByName(@PathVariable String name){
         try {
             FictionalCharacter ob = characterService.getCharacterByName(name);
@@ -129,7 +137,7 @@ public class CharacterController {
             return ResponseEntity.badRequest().body(map);
         }
     }
-    @GetMapping("/wand/{id}")
+    @GetMapping(value="/wand/{id}", produces = "application/json")
     public ResponseEntity<Object> getCharacterWithWandId(@PathVariable int id){
         Map<String, Object> map = new HashMap<>();
         try {

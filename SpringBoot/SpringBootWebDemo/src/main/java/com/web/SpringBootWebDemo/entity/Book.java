@@ -18,11 +18,11 @@ import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-@Entity
+@Entity  // Hibernate managed entities
 @Data
 @AllArgsConstructor 
 @NoArgsConstructor
-@Table(name="booktable")
+@Table(name="booktable")// 
 public class Book {
 
 	@Id
@@ -41,7 +41,7 @@ public class Book {
 	
 	@Positive(message = "Price must be positive")
 	@Min(50)
-	
+	//@Column(name="cost")
 	private double price;
 	
 //	public Book() {
