@@ -15,6 +15,24 @@ import jakarta.annotation.PostConstruct;
 
 //http://localhost:8081/swagger-ui/index.html
 
+/**
+ * Task:
+ * 
+ * Update the Customer and Invoice service and controller class for 
+ * all the CRUD operations pending [ except update for invoice ]
+ * 
+ * Project from the scratch:
+ * Product Management System : CRUD operations for product
+ * 
+ * product -> id, name, desc, price, image, category
+ * 
+ * OR
+ * 
+ * product -> id, name, desc, price, image, categoryid
+ * 
+ * category -> id, name , description
+ */
+
 @SpringBootApplication
 public class SpringBootWebDemoApplication {
 
