@@ -1,5 +1,7 @@
 package com.demo.SpringSecurityDemo.controller;
 
+import java.security.Principal;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class CardsController {
 
     @GetMapping("/myCards")
-    public  String getCardsDetails () {
-        return "Here are the card details from the DB";
+    public  String getCardsDetails (Principal p) {
+        return "Here are the card details from the DB "+p.getName();
     }
 
 }
