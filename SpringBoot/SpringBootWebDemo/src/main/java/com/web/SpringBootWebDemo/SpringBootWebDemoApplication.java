@@ -37,9 +37,7 @@ import jakarta.annotation.PostConstruct;
 public class SpringBootWebDemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootWebDemoApplication.class, args);
-		
-		
+		SpringApplication.run(SpringBootWebDemoApplication.class, args);	
 	}
 	
 	@Autowired
