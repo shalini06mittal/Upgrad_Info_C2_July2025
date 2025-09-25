@@ -43,11 +43,21 @@ public class ProjectSecurityConfig {
 		//http.authorizeHttpRequests( (requests) -> requests.anyRequest().denyAll());
 		
 		
+//		http.authorizeHttpRequests( (requests) -> 
+//				requests
+//				.requestMatchers("/myAccount","/myBalance","/myLoans","/myCards").authenticated()
+//				.requestMatchers("/welcome","/contact","/h2-console/**").permitAll()		
+//				)
+		
 		http.authorizeHttpRequests( (requests) -> 
-				requests
-				.requestMatchers("/myAccount","/myBalance","/myLoans","/myCards").authenticated()
-				.requestMatchers("/welcome","/contact","/h2-console/**").permitAll()		
-				)
+		requests
+		.requestMatchers("/welcome","/contact","/h2-console/**").permitAll()
+		.requestMatchers("/myAccount","/myBalance").hasAnyAuthority("user","admin")
+		.requestMatchers("/myLoans","/myCards").hasAuthority("admin")
+		.anyRequest()
+		.authenticated()
+				
+		)
 		.csrf(csrf -> csrf
                 .ignoringRequestMatchers(("/h2-console/**")) // Disable CSRF for H2 console
             )
