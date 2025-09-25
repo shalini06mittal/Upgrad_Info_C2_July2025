@@ -15,7 +15,7 @@ import org.springframework.security.web.SecurityFilterChain;
 @Configuration
 public class ProjectSecurityConfig {
 	
-	@Bean
+	//@Bean
 	UserDetailsService userDetails() {
 		UserDetails user1 = User
 				.withUsername("shalini").password("{noop}sh123").roles("user")
@@ -30,7 +30,6 @@ public class ProjectSecurityConfig {
 		return new InMemoryUserDetailsManager(user1, user2);
 	}
 
-	
 	@Bean
 	PasswordEncoder encodePassword() {
 		return new BCryptPasswordEncoder();
@@ -47,9 +46,14 @@ public class ProjectSecurityConfig {
 		http.authorizeHttpRequests( (requests) -> 
 				requests
 				.requestMatchers("/myAccount","/myBalance","/myLoans","/myCards").authenticated()
-				.requestMatchers("/welcome","/contact").permitAll()		
-				);
-		
+				.requestMatchers("/welcome","/contact","/h2-console/**").permitAll()		
+				)
+		.csrf(csrf -> csrf
+                .ignoringRequestMatchers(("/h2-console/**")) // Disable CSRF for H2 console
+            )
+            .headers(headers -> headers
+                .frameOptions(frameOptions -> frameOptions.sameOrigin()) // Allow H2 console to be loaded in a frame
+            );
 		http.formLogin(withDefaults());
 		//http.httpBasic(withDefaults());
 		return http.build();
