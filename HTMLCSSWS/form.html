@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+    <style>
+        form div{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <div>
+        <label for="fname">First Name: </label>
+        <input type="text" 
+        placeholder="Enter first name"
+        name="fname" id="fname"/>
+        </div>
+        <div>
+        <label for="lname">Last Name: </label>
+        <input type="text" 
+        placeholder="Enter last name"
+        name="lname" id="lname"/>
+        </div>
+        <div>
+        <label for="lname">Password:  </label>
+        <input type="password" 
+        placeholder="Enter password"
+        name="password" id="password"/>
+        </div>
+        <div>
+        <label for="lname">Color:  </label>
+        <input type="color" 
+        placeholder="Enter password"
+        name="color" id="password"/>
+        </div>
+        <div>
+        <label for="lname">Email:  </label>
+        <input type="email" 
+        placeholder="Enter email"
+        name="email" id="email"/>
+        </div>
+        <div>
+        <label for="lname">Birth Date:  </label>
+        <input type="date" 
+        
+        name="bdate" id="bdate"/>
+        </div>
+        <div>
+        <label for="lname">Summary:  </label>
+        <textarea rows="7" cols="100" name="summary"></textarea>
+        </div>
+        <div>
+        <h4>Mesaging Options</h4>
+        SMS: <input type="checkbox" 
+        name="sms" value="sms" id="password"/>
+        Email: <input type="checkbox" 
+        name="email" id="password"/>
+        WhatsApp: <input type="checkbox" 
+        name="whatsapp" id="password"/>
+        </div>
+         <div>
+        <h4>Login</h4>
+        Google: <input type="radio" 
+        name="login" value="google" id="password"/>
+        Linkedin: <input type="radio" 
+        name="login" value="lin" id="password"/>
+        Facebook: <input type="radio" 
+        name="login" value="fb" id="password"/>
+        </div>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
