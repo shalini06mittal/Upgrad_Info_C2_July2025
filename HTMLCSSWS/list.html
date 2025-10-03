@@ -11,17 +11,44 @@
             background-repeat: no-repeat;
             background-position: right;
         }
+        .list{
+            list-style-type: none;
+        }
+        .list li::before{
+            content: ' \263B';
+            margin-right: 5px;
+        }
+       
     </style>
 </head>
 <body>
     <h1>Hobbies</h1>
     <p>OHH !! I have so many hobbies as I am someone who loves to do so many things</p>
-
-    <ul>
-        <li>Badminton</li>
+<span>&#9787;</span>
+    <ul class="list">
+        <li><a target="_blank"
+            href="https://en.wikipedia.org/wiki/Badminton">Badminton</a></li>
         <li>Playing Cards</li>
         <li>Scrabble</li>
         <li>Swimming</li>
+    </ul>
+    <ul>
+        <li>Sports
+            <ul>
+                <li>Badminton</li>
+                <li>Playing Cards</li>
+                <li>Scrabble</li>
+                <li>Swimming</li>
+            </ul>
+        </li>
+        <li>Arts
+            <ul>
+                <li>Dance</li>
+                <li>Drawing</li>
+                
+            </ul>
+        </li>
+       
     </ul>
      <ul type="square">
         <li>Badminton</li>
