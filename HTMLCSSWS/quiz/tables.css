@@ -1,0 +1,23 @@
+table{
+    width: 60%;
+    margin: auto;
+}
+table,th, td{
+    padding: 30px;
+    border-collapse: collapse;
+}
+h1{
+    text-align: center;
+    padding: 30px;
+}
+th,td{
+    border-bottom: 2px solid rgb(208, 159, 68);
+    border-bottom-width:80% ;
+    text-align: left;
+}
+th:nth-child(1), th:nth-child(2){
+    width: 20%;
+}
+th:nth-child(3){
+    width: 60%;
+}
