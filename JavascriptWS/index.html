@@ -18,7 +18,7 @@
         binary:
         arithmetic  + - * / % **
         relational < > <= >= == != === !==
-        logical & |
+        logical && ||
         conditional - if/else and switch/case
         loops = for/ while/ do-while
         arrays = 1D / 2D [] and indexing
@@ -34,22 +34,46 @@
         3. boolean - true and false
         */
         a = 10;
-        console.log(typeof(a))
-        a = "hello"
-        console.log(typeof(a))
-        a = 10.3
-        console.log(typeof(a))
-        a = true
-        console.log(typeof(a))
+        console.log(typeof(a));
+        a = "hello";
+        console.log(typeof(a));
+        a = 10.3;
+        console.log(typeof(a));
+        a = true;
+        console.log(typeof(a));
         // undefined, null, NaN and ReferenceError
         console.log(x);
         var x = 10;
-        console.log(x)
+        console.log(x);
         //console.log(y)
         let y = "hey";
-        console.log(y)
+        console.log(y);
         const s = 200;
         //s = 20;
+        let m = 10;
+        m++; m--;
+        console.log(10+3);
+        console.log(10-3);
+        console.log(10*3);
+        console.log(10/3);// 3.333333
+        console.log(Math.floor(10/3));// 3 [ Quotient ]
+        console.log(10%3);
+        console.log(10**3);
+
+        console.log("Relational Operators")
+        console.log(10>3);
+        console.log(10<3);
+        console.log(10>=3);
+        console.log(10<=10);
+        console.log(10>10);
+        console.log(10==10);
+        console.log(10=='10');// true, only checks the value
+        console.log(10===10);
+        console.log(10==='10');// false , compares type and then the value
+
+        console.log("Logical Operators");
+        console.log(10%3==0 && 10%5==0);
+        console.log(10%3==0 || 10%5==0);
     </script>
 </body>
 </html>
