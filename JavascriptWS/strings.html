@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Demo</title>
+</head>
+<body>
+    <h1>String Demo</h1>
+    <script>
+        let name = "Shalini";
+        console.log(name.length);
+        console.log(name[0])
+        console.log(name[7])
+        for(let s of name){
+            console.log(s)
+        }
+        console.log(name.charAt(2))
+        console.log(name.indexOf('a'))
+        console.log("Hello ".concat(name))
+        console.log("file.jpg".endsWith("jpg"))
+        console.log("http://www.techgatha.com".startsWith("https"))
+        console.log(name.repeat(3))
+        console.log(name.replace("Sh","M"))
+        console.log(name.slice(2, 3))
+        console.log("Hello how are you".split(" "))
+        console.log("Shalini,Mumbai, 9789778".split(","))
+        console.log('****'+"rose is red".substring(4)+'***')
+        console.log('****'+"rose is red".substring(4, 8)+'***')
+        console.log('****'+"rose is red".substring(5, 8)+'***')
+        s = "     Hey    there.    "
+        console.log('****'+s.trim()+'****')
+        console.log('****'+s.trimEnd()+'****')
+        console.log('****'+s.trimStart()+'****')
+    </script>
+</body>
+</html>
