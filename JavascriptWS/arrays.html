@@ -8,6 +8,55 @@
 <body>
     <h1>Array Demo</h1>
 
-    
+    <script>
+        // let nos = [10,12,30,14,5,6,"hello", 5.6, true, false];
+        // console.log(nos)
+        // for (let i = 0; i < nos.length; i++) {
+        //     const element = nos[i];
+        //     console.log(i+" "+element+element)
+        // }
+        // //console.log(nos.length);
+        // // nos[100]= 100;
+        // // console.log(nos.length);
+        // // console.log(nos[50])
+        // // console.log(nos)
+        // // for of loops -> gives value
+        // for(let value of nos ){
+        //     console.log(value)
+        // }
+        //   // for in loops -> gives index
+        // for(let index in nos ){
+        //     console.log(index, nos[index])
+        // }
+
+        let data =[1,2,3,4,10,6,7,8,9,10];
+        console.log(data);
+        console.log(data.push(100))
+        console.log(data);
+        console.log(data.indexOf(10)); // index of first occurence
+        console.log(data.indexOf(10, 5)); // index of occurence from index 5
+        console.log(data.includes(30));
+        let a = data.join(' : ');
+        console.log(typeof(a))
+        console.log(data.pop())// removes from last
+        console.log(data);
+        console.log(data.shift())// removes from start
+        console.log(data);
+        console.log(data.unshift(20,30,40))// adds elements from the beginning
+        console.log(data);
+        console.log(data.slice(2,6))
+
+        console.log(data.splice(2, 2))
+        console.log(data);
+
+        console.log(data.splice(2, 0, 200,201,202))
+        console.log(data);
+
+        // let names = ["Asha","Divya","Shaikh","Prakash"];
+        // console.log(names.includes("Asha"))
+
+        
+
+    </script>
 </body>
 </html>
