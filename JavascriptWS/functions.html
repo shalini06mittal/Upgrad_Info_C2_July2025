@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Demo</title>
+</head>
+<body>
+    <script>
+        function greet(name){
+            if(name!== undefined && name !== null && name!== '')
+                console.log('welcome '+name)
+            else{
+                console.log('welcome guest')
+            }
+        }
+        greet()
+        greet('')
+        greet('Shalini')
+        greet(null)
+        // default parameters
+        function welcome(name="Guest"){
+            //if(name!== undefined && name !== null && name!== '')
+                console.log('welcome '+name)
+            // else{
+            //     console.log('welcome guest')
+            // }
+        }   
+        welcome()
+        welcome('')
+        welcome(null)
+        welcome('manisha')
+
+        function order(item='pizza', drink, desert='vanilla icecream'){
+            // template literals
+            console.log(`your order for ${item} along with ${drink} and ${desert}`)
+        }
+        order()
+
+        function add(a,b){
+            return a+b;
+        }
+        console.log(add(3,7))
+
+        function calc(){
+            console.log(arguments[0])
+            for(let v of arguments){
+                console.log(v)
+            }
+        }
+        calc()
+        calc(1,2,3)
+    </script>
+</body>
+</html>
