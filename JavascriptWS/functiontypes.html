@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function Types</h1>
+    <script>
+        /**
+         1. Named functions : function greet(){} are hoisted
+         2. Function expressions : that allows you to store function as a reference in a variable
+         3. IIFE : Immediately Invoked Function Expression
+         4. Nested functions
+         5. Functions passed as paramters and return type
+         6. Closures : to maintain the state of data
+         7. Arrow function : concise way of writing a function
+         */
+
+         // function expressions:
+
+        // console.log(get());
+        // function get(){
+        //     return "hello";
+        //  }
+        //  //sub();
+        //  const sub = function(a, b){
+        //     console.log(a-b)
+        //  }
+        //  console.log(sub);
+        //  sub(3,2)
+
+        function square(no){
+            return no*no;
+        }
+        // // callback functions
+        // function calc(arr, fn){
+        //     console.log(fn)
+        //     for(let v of arr){
+        //         console.log(fn(v))
+        //     }
+        // }
+        // calc([1,2,3,4,5], square);
+        // calc([1,2,3,4,5], function(n){
+        //     return n**3
+        // });
+
+        function m3(){
+            console.log('m3 called');
+            return square;
+        }
+        console.log(m3()(2));
+        function m1(){
+            console.log('m1 called');
+            function m2(){
+                console.log('m2 called');
+            }
+            return m2;
+        }
+        let res = m1();
+        console.log(res);
+        res();
+    </script>
+</body>
+</html>
