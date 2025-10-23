@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+</head>
+<body>
+    <h1>Arrow Function Demo</h1>
+    <script>
+        //concise way of writing a function
+        // function square(no){
+        //     return no*no;
+        // }
+        /**
+         * functions have only 3 important parts:
+         * 1. input
+         * 2. body
+         * 3. output
+         */
+        
+         // const square = (a)=>{
+        //     console.log('sq')
+        //     return a**2;
+        // }
+
+        // const square = a=>{
+        //     console.log('sq')
+        //     return a**2;
+        // }
+
+       // const square = a =>  a**2;
+        
+
+        // callback functions
+        function calc(arr, fn){
+            console.log(fn)
+            for(let v of arr){
+                console.log(fn(v))
+            }
+        }
+        calc([1,2,3,4,5], a =>  a**2);
+        calc([1,2,3,4,5], a =>  a**3);
+        calc([1,2,3,4,5], a =>  Math.sqrt(a));
+    </script>
+</body>
+</html>

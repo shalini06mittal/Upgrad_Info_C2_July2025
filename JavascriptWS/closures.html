@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closures</title>
+</head>
+<body>
+    <h1>Closures Demo</h1>
+    <script>
+    function m1(){
+        let c = 0;// i have created a closure around the variable c
+        function incr(){
+            c++;
+            return c;
+        }
+       return incr;
+    }
+    let inc = m1();
+    console.log(inc());
+    console.log(inc());
+    console.log(inc());
+    c =10;
+    console.log(inc());
+    console.log(inc());
+    </script>
+    
+</body>
+</html>
