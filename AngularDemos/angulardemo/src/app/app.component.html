@@ -1,0 +1,19 @@
+<!-- String interpolation {{ }}
+binding data with view
+1-way data binding syntax 
+[]
+-->
+<h1>{{title}}</h1>
+<p>{{desc}}</p>
+<p>{{2+2}}</p>
+<p>{{getName()}}</p>
+<hr/>
+<h4>Data Binding difference</h4>
+Proper Binding: <input type="checkbox" 
+name="" [checked]="enabled"
+id="" >
+Improper Binding: <input type="checkbox" 
+name="" checked
+id="" >
+<!-- event binding ()-->
+<button (click)="change()">Enabled</button>
