@@ -1,0 +1,33 @@
+<h3>Pipe Demo</h3>
+<h4>Number Pipe </h4>
+<p>{{amount}}</p>
+<p>{{amount | number:'3.2-5'}}</p>
+<p>{{amount | number:'5.3-7'}}</p>
+<h4>Lower case pipe</h4>
+<p>{{name}}</p>
+<p>{{name | lowercase}}</p>
+<h4>Upper case pipe</h4>
+<p>{{name | uppercase}}</p>
+<h4>Title case pipe</h4>
+<p>{{name | titlecase}}</p>
+<h4>JSON</h4>
+<p>{{book}}</p>
+<p>Book : {{book | json}}</p>
+<h4>date Pipe</h4>
+<p>{{bdate}}</p>
+<p>{{bdate | date}}</p>
+<p>{{bdate | date:'short'}}</p>
+<p>{{bdate | date:'medium'}}</p>
+<p>{{bdate | date:'long'}}</p>
+<h4>Currency</h4>
+<p>{{amount}}</p>
+<p>{{amount | currency :'USD'}}</p>
+<p>{{amount | currency :'EUR'}}</p>
+<h4>Percent</h4>
+<p>{{amount}}</p>
+<p>{{amount | percent}}</p>
+<p>{{amount | percent:'1.2-4'}}</p>
+<h4>Slice</h4>
+<p>{{nos}}</p>
+<p>{{nos | slice:1}}</p>
+<p>{{nos | slice:1:4}}</p>

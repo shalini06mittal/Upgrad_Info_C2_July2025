@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Book } from '../model/Book';
 
 @Component({
   selector: 'app-booklist',
@@ -8,11 +9,12 @@ import { Component } from '@angular/core';
 })
 export class BooklistComponent {
 
-    blist:any[] = [];
+    blist:Book[] = [];
 
     constructor(){
       this.blist=[
-        {bookid:1, title:'Midnight Sky', author:'Sydney', desc:'Enjoy the suspense', price: 23.89},
+        {bookid:1, title:'Midnight Sky', author:'Sydney',
+           desc:'Enjoy the suspense', price: 23.89},
         {bookid:2, title:'Philosophers Stone', author:'J.K. Rowling', desc:'Enjoy the adventures', price: 123.89}
       ]
     }
