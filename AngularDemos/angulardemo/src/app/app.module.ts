@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { BooklistComponent } from './booklist/booklist.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { ReversePipe } from './pipes/reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PipesComponent } from './pipes/pipes.component';
     HeaderComponent,
     FooterComponent,
     BooklistComponent,
-    PipesComponent
+    PipesComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,
