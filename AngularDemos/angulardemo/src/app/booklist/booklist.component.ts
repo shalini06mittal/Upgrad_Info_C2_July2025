@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Book } from '../model/Book';
+import { books } from '../model/data';
 
 @Component({
   selector: 'app-booklist',
@@ -11,12 +12,17 @@ export class BooklistComponent {
 
     blist:Book[] = [];
 
-    constructor(){
-      this.blist=[
-        {bookid:1, title:'Midnight Sky', author:'Sydney',
-           desc:'Enjoy the suspense', price: 23.89},
-        {bookid:2, title:'Philosophers Stone', author:'J.K. Rowling', desc:'Enjoy the adventures', price: 123.89}
-      ]
-    }
 
+    constructor(){
+      this.blist= books;
+    }
+    searchBooks(author:any){
+      console.log('value emitted to booklist',author);
+      if(author==='all')
+        this.blist = books
+     
+      else
+      this.blist = 
+      books.filter(book => book.author.toLowerCase() === author.toLowerCase())
+    }
 }
