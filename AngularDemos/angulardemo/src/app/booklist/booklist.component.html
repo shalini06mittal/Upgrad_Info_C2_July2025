@@ -6,7 +6,9 @@
 <div *ngIf="blist.length!=0">
     {{blist | json}}
 </div> -->
-<app-search (emitAuthor)="searchBooks($event)"></app-search>
+<app-search 
+[author]="'All'"
+(emitAuthor)="searchBooks($event)"></app-search>
 <div *ngIf="blist?.length==0; else books">
     <p>No Books Added</p>
 </div>

@@ -12,13 +12,14 @@ export class BooklistComponent {
 
     blist:Book[] = [];
 
+    
 
     constructor(){
       this.blist= books;
     }
     searchBooks(author:any){
       console.log('value emitted to booklist',author);
-      if(author==='all')
+      if(author.toLowerCase()==='all')
         this.blist = books
      
       else

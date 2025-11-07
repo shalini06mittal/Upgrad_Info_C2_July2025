@@ -9,6 +9,8 @@ import { BooklistComponent } from './booklist/booklist.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { SearchComponent } from './search/search.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { ChildComponent } from './lifecycle/child.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SearchComponent } from './search/search.component';
     BooklistComponent,
     PipesComponent,
     ReversePipe,
-    SearchComponent
+    SearchComponent,
+    LifecycleComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

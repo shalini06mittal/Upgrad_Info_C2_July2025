@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -8,10 +8,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class SearchComponent {
 
-  author:string = 'all'
+  @Input()
+  author:string = ''
   @Output()
   emitAuthor:EventEmitter<string> = new EventEmitter();
 
+  
   send(author:string){
     
     console.log(author);
