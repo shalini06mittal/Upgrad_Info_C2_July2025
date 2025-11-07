@@ -22,12 +22,15 @@ export class ChildComponent {
   constructor() {
     console.log(`child constructor ${this.country}`);
   }
-
+  i=1;
+  interval:any;
   ngOnInit(): void {
     console.log(`child ng on init ${this.country}`);
+    this.interval = setInterval(()=> console.log(this.i++), 1000);
   }
   // it is invoked only first time the component is loaded
   ngOnDestroy(): void {
     console.log(`child destroy`);
+    clearInterval(this.interval);
   }
 }
