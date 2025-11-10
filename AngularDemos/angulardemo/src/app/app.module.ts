@@ -11,6 +11,8 @@ import { ReversePipe } from './pipes/reverse.pipe';
 import { SearchComponent } from './search/search.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { ChildComponent } from './lifecycle/child.component';
+import { BookComponent } from './book/book.component';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ChildComponent } from './lifecycle/child.component';
     ReversePipe,
     SearchComponent,
     LifecycleComponent,
-    ChildComponent
+    ChildComponent,
+    BookComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,
