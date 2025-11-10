@@ -1,4 +1,7 @@
  <h1>Favorite Books</h1>
+ <div *ngIf="favlist.length==0">
+    <p>No books added yet</p>
+    </div>
  <div *ngFor="let book of favlist" class="mt-3">
         <app-book [book]="book"></app-book>
         <hr/>

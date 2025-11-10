@@ -12,8 +12,8 @@ export class BooklistComponent {
 
     blist:Book[] = [];
 
-    
-
+    id:number = 0;
+    favorite:string='Add To Favorite'
     constructor(){
       this.blist= books;
     }
@@ -25,5 +25,15 @@ export class BooklistComponent {
       else
       this.blist = 
       books.filter(book => book.author.toLowerCase() === author.toLowerCase())
+    }
+    addToFavorite(bookid:number){
+      this.id = bookid;
+      for(let i=0;i<this.blist.length;i++){
+        let book = this.blist[i];
+          if(book.bookid === this.id){
+              book.isFav = !book.isFav;
+              this.favorite = book.isFav ? 'Remove' : 'Add To Favorite';
+          }
+      }
     }
 }

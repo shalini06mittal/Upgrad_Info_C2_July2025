@@ -3,5 +3,6 @@ export interface Book{
     title:string,
     author:string,
     desc:string,
-    price:number
+    price:number,
+    isFav?:boolean;
 }

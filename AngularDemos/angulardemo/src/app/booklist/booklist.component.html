@@ -16,6 +16,10 @@
 <ng-template #books>
     <div *ngFor="let book of blist" class="mt-3">
         <app-book [book]="book"></app-book>
+        <button class="btn btn-primary" 
+        (click)="addToFavorite(book.bookid)">{{favorite}}</button>
         <hr/>
     </div>
 </ng-template>
+
+<app-favorite [favid] = "id"></app-favorite>
