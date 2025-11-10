@@ -11,6 +11,7 @@
 employee name" /></p>
     <p>Show Child : <input type="checkbox" [(ngModel)]="show" /></p>
     <div *ngIf="show">
-        <app-child [country]="pcountry" [employee]="emp"></app-child>
+        <app-child [country]="pcountry" 
+        [employee]="emp"></app-child>
     </div>
 </div>
