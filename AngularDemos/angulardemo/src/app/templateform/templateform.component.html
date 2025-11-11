@@ -1,0 +1,20 @@
+<h3>Add a new book</h3>
+<hr>
+{{bookform.value | json}}
+<form action="" #bookform="ngForm">
+
+    <input type="text" name="title" class="form-control"
+    [class.is-invalid] = "title.touched && title.invalid"  minlength="5"
+    [(ngModel)]="book.title" #title="ngModel" pattern="^[A-za-z \d]+$"
+    placeholder="Enter Title" required id="">
+    <small class="text-danger" [class.d-none]="title.valid || title.untouched">
+        <div *ngIf="title.errors && title.invalid">
+            <small class="text-danger" *ngIf="title.errors['required']">Title Required</small>
+            <small class="text-danger" *ngIf="title.errors['pattern']">Title can contain alphabets, space and digits only</small>
+            <small class="text-danger" *ngIf="title.errors['minlength']">Title should be atleast 5 characters</small>
+        </div>
+    </small>
+      <!-- {{title.className}} -->
+
+</form>
+<hr>

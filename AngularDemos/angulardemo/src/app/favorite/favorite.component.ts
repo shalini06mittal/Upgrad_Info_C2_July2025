@@ -22,18 +22,25 @@ export class FavoriteComponent implements OnChanges{
 
   ngOnChanges(changes: SimpleChanges): void {
     console.log(this.favid)
-    // if(this.favlist.length==0){
-    //   let book = books.find(item => item.bookid === this.favid);
-    //       if(book!== undefined)
-    //         this.favlist.push(book);
+    let obj = books.find(item => item.bookid === this.favid && !item.isFav);
+    console.log(obj);
+    // if(obj){
+    //   this.favlist = this.favlist.filter(book => book !== obj);
     // }
-    //   for(let i=0;i<this.favlist.length;i++){
-    //     if(this.favlist[i].bookid !== this.favid){
-    //       let book = books.find(item => item.bookid === this.favid);
-    //       if(book!== undefined)
-    //         this.favlist.push(book);
-    //     }
-    //   }
+    if(this.favlist.length==0){
+      let book = books.find(item => item.bookid === this.favid);
+          if(book!== undefined)
+            this.favlist.push(book);
+    }
+      for(let i=0;i<this.favlist.length;i++){
+        if(this.favlist[i].bookid !== this.favid){
+          let book = books.find(item => item.bookid === this.favid);
+          if(book!== undefined){
+            this.favlist.push(book);
+            break;
+          }
+        }
+      }
   }
 
 }

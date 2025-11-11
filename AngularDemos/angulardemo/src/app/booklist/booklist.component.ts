@@ -32,7 +32,7 @@ export class BooklistComponent {
         let book = this.blist[i];
           if(book.bookid === this.id){
               book.isFav = !book.isFav;
-              this.favorite = book.isFav ? 'Remove' : 'Add To Favorite';
+              
           }
       }
     }

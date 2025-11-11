@@ -13,6 +13,7 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
 import { ChildComponent } from './lifecycle/child.component';
 import { BookComponent } from './book/book.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { TemplateformComponent } from './templateform/templateform.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     LifecycleComponent,
     ChildComponent,
     BookComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    TemplateformComponent
   ],
   imports: [
     BrowserModule,
