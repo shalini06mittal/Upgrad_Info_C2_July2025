@@ -1,20 +1,53 @@
 <h3>Add a new book</h3>
 <hr>
 {{bookform.value | json}}
-<form action="" #bookform="ngForm">
+<form action="" #bookform="ngForm" (submit)="addBook(bookform.value)">
+    <div class="mb-3">
+        <input type="text" name="title" class="form-control" [class.is-invalid]="title.touched && title.invalid"
+            minlength="5" [(ngModel)]="book.title" #title="ngModel" pattern="^[A-za-z \d]+$" placeholder="Enter Title"
+            required id="">
+        <small class="text-danger" [class.d-none]="title.valid || title.untouched">
+            <div *ngIf="title.errors && title.invalid">
+                <small class="text-danger" *ngIf="title.errors['required']">Title Required</small>
+                <small class="text-danger" *ngIf="title.errors['pattern']">Title can contain alphabets, space and digits
+                    only</small>
+                <small class="text-danger" *ngIf="title.errors['minlength']">Title should be atleast 5
+                    characters</small>
+            </div>
+        </small>
+    </div>
+    <!-- {{title.className}} -->
+    <div class="mb-3">
+        <input type="text" name="author" class="form-control" [class.is-invalid]="author.touched && author.invalid"
+            [(ngModel)]="book.author" #author="ngModel" pattern="^[A-za-z \d]+$" placeholder="Enter author" required
+            id="">
+        <small class="text-danger" [class.d-none]="author.valid || author.untouched">
+            <div *ngIf="author.errors && author.invalid">
+                <small class="text-danger" *ngIf="author.errors['required']">author Required</small>
+                <small class="text-danger" *ngIf="author.errors['pattern']">author can contain alphabets, space and
+                    digits only</small>
 
-    <input type="text" name="title" class="form-control"
-    [class.is-invalid] = "title.touched && title.invalid"  minlength="5"
-    [(ngModel)]="book.title" #title="ngModel" pattern="^[A-za-z \d]+$"
-    placeholder="Enter Title" required id="">
-    <small class="text-danger" [class.d-none]="title.valid || title.untouched">
-        <div *ngIf="title.errors && title.invalid">
-            <small class="text-danger" *ngIf="title.errors['required']">Title Required</small>
-            <small class="text-danger" *ngIf="title.errors['pattern']">Title can contain alphabets, space and digits only</small>
-            <small class="text-danger" *ngIf="title.errors['minlength']">Title should be atleast 5 characters</small>
-        </div>
-    </small>
-      <!-- {{title.className}} -->
+            </div>
+        </small>
+    </div>
+    <div class="mb-3">
+        <input type="number" name="price" class="form-control" [class.is-invalid]="price.touched && price.invalid"
+            min="1" [(ngModel)]="book.price" #price="ngModel" required placeholder="Enter price" id="">
+        <small class="text-danger" [class.d-none]="price.valid || price.untouched">
+            <div *ngIf="price.errors && price.invalid">
+                <small class="text-danger" *ngIf="price.errors['required']">price Required</small>
+                <!-- <small class="text-danger" *ngIf="author.errors['pattern']">price can contain alphabets, space and digits only</small> -->
 
+            </div>
+        </small>
+    </div>
+    <div class="mb-3">
+        <input type="text" name="desc" class="form-control" [class.is-invalid]="desc.touched && desc.invalid"
+            [(ngModel)]="book.desc" #desc="ngModel" placeholder="Enter desc"  id="">
+
+    </div>
+    <div class="mb-3">
+        <input type="submit" value="Add" class="btn btn-primary">
+    </div>
 </form>
 <hr>

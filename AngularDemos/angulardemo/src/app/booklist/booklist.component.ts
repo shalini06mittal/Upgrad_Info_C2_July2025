@@ -13,6 +13,7 @@ export class BooklistComponent {
     blist:Book[] = [];
 
     id:number = 0;
+    delid:number = 0;
     favorite:string='Add To Favorite'
     constructor(){
       this.blist= books;
@@ -32,6 +33,8 @@ export class BooklistComponent {
         let book = this.blist[i];
           if(book.bookid === this.id){
               book.isFav = !book.isFav;
+              if(!book.isFav)
+                this.delid = book.bookid
               
           }
       }

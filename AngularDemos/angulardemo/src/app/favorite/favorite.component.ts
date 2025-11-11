@@ -13,6 +13,9 @@ export class FavoriteComponent implements OnChanges{
     @Input()
     favid:number=0;
 
+    @Input()
+    delid:number=0;
+
     //ids:number[] = [];
     favlist:Book[] = [];   
     
@@ -21,26 +24,43 @@ export class FavoriteComponent implements OnChanges{
     }
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.favid)
-    let obj = books.find(item => item.bookid === this.favid && !item.isFav);
+    let obj = books.find(item => item.bookid === this.favid);
     console.log(obj);
-    // if(obj){
-    //   this.favlist = this.favlist.filter(book => book !== obj);
+    // book.isFavorite = !book.isFavorite;
+
+    // // 2. Add or remove the book from the favoriteBooks list
+    // if (book.isFavorite) {
+    //   // Add to favorites if not already present
+    //   if (!this.favoriteBooks.some(fav => fav.id === book.id)) {
+    //     this.favoriteBooks.push(book);
+    //   }
+    // } else {
+    //   // Remove from favorites if present
+    //   const index = this.favoriteBooks.findIndex(fav => fav.id === book.id);
+    //   if (index !== -1) {
+    //     this.favoriteBooks.splice(index, 1);
+    //   }
     // }
-    if(this.favlist.length==0){
-      let book = books.find(item => item.bookid === this.favid);
-          if(book!== undefined)
-            this.favlist.push(book);
-    }
-      for(let i=0;i<this.favlist.length;i++){
-        if(this.favlist[i].bookid !== this.favid){
-          let book = books.find(item => item.bookid === this.favid);
-          if(book!== undefined){
-            this.favlist.push(book);
-            break;
-          }
-        }
-      }
+    // console.log(this.favid)
+    
+    // console.log(obj);
+    // // if(obj){
+    // //   this.favlist = this.favlist.filter(book => book !== obj);
+    // // }
+    // if(this.favlist.length==0){
+    //   let book = books.find(item => item.bookid === this.favid);
+    //       if(book!== undefined)
+    //         this.favlist.push(book);
+    // }
+    //   for(let i=0;i<this.favlist.length;i++){
+    //     if(this.favlist[i].bookid !== this.favid){
+    //       let book = books.find(item => item.bookid === this.favid);
+    //       if(book!== undefined){
+    //         this.favlist.push(book);
+    //         break;
+    //       }
+    //     }
+    //   }
   }
 
 }
