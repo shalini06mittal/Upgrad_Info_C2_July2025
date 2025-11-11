@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 import { Book } from '../model/Book';
 import { books } from '../model/data';
 
@@ -8,9 +8,12 @@ import { books } from '../model/data';
   templateUrl: './booklist.component.html',
   styleUrl: './booklist.component.css'
 })
-export class BooklistComponent {
+export class BooklistComponent implements OnChanges{
 
     blist:Book[] = [];
+
+    @Input()
+    newBook:Book =  {bookid:0, title:'', author:'', price:0.0,desc:''};
 
     id:number = 0;
     delid:number = 0;
@@ -18,6 +21,10 @@ export class BooklistComponent {
     constructor(){
       this.blist= books;
     }
+  ngOnChanges(changes: SimpleChanges): void {
+    this.newBook.bookid = books.length+1;
+    books.push(this.newBook);
+  }
     searchBooks(author:any){
       console.log('value emitted to booklist',author);
       if(author.toLowerCase()==='all')

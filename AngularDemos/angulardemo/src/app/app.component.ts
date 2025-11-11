@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Book } from './model/Book';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,8 @@ export class AppComponent {
   desc = "Content "
   enabled:boolean=false;
   username:string = 'Guest'
+  book:any;
+
   getName(){
   
     return "Shalini";
@@ -22,5 +25,8 @@ export class AppComponent {
   }
   updateUsername(event:any){
     this.username = event.target.value;
+  }
+  addNewBook(newBook:Book){
+      this.book = newBook;
   }
 }

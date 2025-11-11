@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Book } from '../model/Book';
 
 @Component({
@@ -10,7 +10,11 @@ import { Book } from '../model/Book';
 export class TemplateformComponent {
   book:Book = {bookid:0, title:'', author:'', price:0.0,desc:''};
 
+  @Output()
+  emitBookAdded : EventEmitter<Book> = new EventEmitter();
   addBook(newBook:Book){
     console.log(newBook)
+    
+    this.emitBookAdded.emit(newBook);
   }
 }
