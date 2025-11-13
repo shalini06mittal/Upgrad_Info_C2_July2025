@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Book } from './model/Book';
+import { DemoService } from './services/demo.service';
 
 @Component({
   selector: 'app-root',
@@ -14,6 +15,7 @@ export class AppComponent {
   username:string = 'Guest'
   book:any;
 
+  constructor(public demo:DemoService){}
   getName(){
   
     return "Shalini";

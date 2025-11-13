@@ -15,6 +15,7 @@ import { BookComponent } from './book/book.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TemplateformComponent } from './templateform/templateform.component';
 import { ReactiveComponent } from './reactive/reactive.component';
+import { ServiceComponent } from './services/service.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ReactiveComponent } from './reactive/reactive.component';
     BookComponent,
     FavoriteComponent,
     TemplateformComponent,
-    ReactiveComponent
+    ReactiveComponent,
+    ServiceComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,

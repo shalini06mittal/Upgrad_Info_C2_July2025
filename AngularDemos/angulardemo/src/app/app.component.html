@@ -6,7 +6,7 @@ binding data with view
 
  <app-header></app-header>
 
-<div class="container">
+<div class="container mb-5">
      <!-- <app-pipes></app-pipes> -->
  <!-- <p>{{desc}}</p>
 <p>{{2+2}}</p>
@@ -33,8 +33,12 @@ id="i" > -->
 </p> -->
 <!-- <app-lifecycle></app-lifecycle> -->
  <!-- <app-templateform (emitBookAdded)="addNewBook($event)"></app-templateform> -->
-  <app-reactive></app-reactive>
-<app-booklist [newBook]="book"></app-booklist>
+ <h2>App Component</h2>
+ <p>Service Message: {{demo.message}}</p>
+ 
+ <app-service mb-5></app-service>
+  <!-- <app-reactive></app-reactive>
+<app-booklist [newBook]="book"></app-booklist> -->
 <!-- <app-favorite></app-favorite> -->
 </div>
 <app-footer></app-footer>
