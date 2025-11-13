@@ -26,6 +26,22 @@
                 <span class="text-danger">Author should be atleast 8 characters</span>
         </div>
     </div>
+     <div class="mb-3">
+        <input type="text" name="password" class="form-control" 
+            placeholder="Enter password"
+            formControlName="password"
+             id="">
+        <div *ngIf="password.touched">
+
+        
+        <div *ngIf="password.invalid && password.errors?.['required']">
+                <span class="text-danger">password is required</span>
+        </div>
+        <div *ngIf="password.invalid && password.hasError('needsExcalamation')">
+                <span class="text-danger">password should have !</span>
+        </div>
+        </div>
+    </div>
 </form>
 <p>{{title.value}}</p>
 <label for="title">
