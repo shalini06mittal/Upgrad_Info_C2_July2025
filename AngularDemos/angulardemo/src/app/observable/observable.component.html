@@ -1,0 +1,13 @@
+<h2>Observable Basics</h2>
+
+<hr>
+
+<div *ngFor="let fruit of fruits">
+    {{fruit}}
+</div>
+<b>Error Status :</b>
+{{anyErrors ? 'error occurred':''}}
+<div>
+    <b>Completion Status : {{finished? 'Observer completed':''}}</b>
+</div>
+<button (click)="start()">Start</button>

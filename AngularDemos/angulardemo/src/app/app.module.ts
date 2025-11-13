@@ -16,6 +16,7 @@ import { FavoriteComponent } from './favorite/favorite.component';
 import { TemplateformComponent } from './templateform/templateform.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 import { ServiceComponent } from './services/service.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ServiceComponent } from './services/service.component';
     FavoriteComponent,
     TemplateformComponent,
     ReactiveComponent,
-    ServiceComponent
+    ServiceComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,
