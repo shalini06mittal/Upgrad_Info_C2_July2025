@@ -1,0 +1,34 @@
+<h2>Reactive Driven Form</h2>
+{{bookform.value | json}}
+{{bookform.status | json}}
+<form action="" [formGroup]="bookform">
+     <div class="mb-3">
+        <input type="text" name="title" class="form-control" 
+             placeholder="Enter Title"
+            formControlName="title"
+             id="">
+        <div *ngIf="title.invalid && title.errors?.['required']">
+                <span class="text-danger">Title is required</span>
+        </div>
+        <div *ngIf="title.invalid && title.errors?.['pattern']">
+                <span class="text-danger">Title can contain only alphabets and space</span>
+        </div>
+    </div>
+    <div class="mb-3">
+        <input type="text" name="author" class="form-control" 
+            placeholder="Enter Author"
+            formControlName="author"
+             id="">
+        <div *ngIf="bookform.controls['author'].invalid && bookform.controls['author'].errors?.['required']">
+                <span class="text-danger">Author is required</span>
+        </div>
+        <div *ngIf="bookform.controls['author'].invalid && bookform.controls['author'].errors?.['minlength']">
+                <span class="text-danger">Author should be atleast 8 characters</span>
+        </div>
+    </div>
+</form>
+<p>{{title.value}}</p>
+<label for="title">
+    Title : <input type="text" [formControl]="title"
+    name="title" class="form-control">
+</label>

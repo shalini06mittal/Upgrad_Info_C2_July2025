@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +14,7 @@ import { ChildComponent } from './lifecycle/child.component';
 import { BookComponent } from './book/book.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TemplateformComponent } from './templateform/templateform.component';
+import { ReactiveComponent } from './reactive/reactive.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +29,11 @@ import { TemplateformComponent } from './templateform/templateform.component';
     ChildComponent,
     BookComponent,
     FavoriteComponent,
-    TemplateformComponent
+    TemplateformComponent,
+    ReactiveComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, ReactiveFormsModule,
     AppRoutingModule, FormsModule
   ],
   providers: [],
