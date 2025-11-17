@@ -20,6 +20,8 @@ import { ObservableComponent } from './observable/observable.component';
 import { PostComponent } from './post/post.component';
 import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { AddpostComponent } from './addpost/addpost.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { AddpostComponent } from './addpost/addpost.component';
     ServiceComponent,
     ObservableComponent,
     PostComponent,
-    AddpostComponent
+    AddpostComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,

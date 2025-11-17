@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, HostListener, OnDestroy, OnInit, Output } from '@angular/core';
 import { Book } from '../model/Book';
 
 @Component({
@@ -7,7 +7,22 @@ import { Book } from '../model/Book';
   templateUrl: './templateform.component.html',
   styleUrl: './templateform.component.css'
 })
-export class TemplateformComponent {
+export class TemplateformComponent implements OnInit{
+  
+
+  @HostListener('window:beforeunload', ['$event'])
+  beforeUnloadHandler(){
+    sessionStorage.setItem("book", JSON.stringify(this.book));
+  }
+
+  ngOnInit(): void {
+    let book = sessionStorage.getItem("book");
+    if(book){
+      console.log(book)
+      this.book = JSON.parse(book);
+    }
+  }
+
   book:Book = {bookid:0, title:'', author:'', price:0.0,desc:''};
 
   @Output()
@@ -17,4 +32,6 @@ export class TemplateformComponent {
     
     this.emitBookAdded.emit(newBook);
   }
+
+
 }

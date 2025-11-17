@@ -32,16 +32,24 @@ id="i" > -->
     
 </p> -->
 <!-- <app-lifecycle></app-lifecycle> -->
- <!-- <app-templateform (emitBookAdded)="addNewBook($event)"></app-templateform> -->
+ <!-- <button class="btn btn-primary" (click)="toggle()">Add Book</button>
+ <div *ngIf="show">
+  <app-templateform (emitBookAdded)="addNewBook($event)"></app-templateform>
+ </div>
+ 
+  -->
+ 
  <!-- <h2>App Component</h2>
  <p>Service Message: {{demo.message}}</p>
  
  <app-service mb-5></app-service> -->
  <!-- <app-observable></app-observable> -->
-  <!-- <app-reactive></app-reactive>
-<app-booklist [newBook]="book"></app-booklist> -->
+  <!-- <app-reactive></app-reactive>-->
+   <router-outlet></router-outlet>
+<!-- <app-booklist [newBook]="book"></app-booklist> -->
 <!-- <app-favorite></app-favorite> -->
- <app-addpost></app-addpost>
- <app-post></app-post>
+ <!-- <app-addpost></app-addpost>
+ <app-post></app-post> -->
+ 
 </div>
 <app-footer></app-footer>

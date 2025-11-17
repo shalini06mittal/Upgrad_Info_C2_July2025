@@ -14,6 +14,7 @@ export class AppComponent {
   enabled:boolean=false;
   username:string = 'Guest'
   book:any;
+  show:boolean= false;
 
   constructor(public demo:DemoService){}
   getName(){
@@ -30,5 +31,8 @@ export class AppComponent {
   }
   addNewBook(newBook:Book){
       this.book = newBook;
+  }
+  toggle(){
+    this.show = !this.show
   }
 }
