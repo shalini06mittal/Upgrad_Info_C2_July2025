@@ -17,6 +17,8 @@ import { TemplateformComponent } from './templateform/templateform.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 import { ServiceComponent } from './services/service.component';
 import { ObservableComponent } from './observable/observable.component';
+import { PostComponent } from './post/post.component';
+import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -34,13 +36,14 @@ import { ObservableComponent } from './observable/observable.component';
     TemplateformComponent,
     ReactiveComponent,
     ServiceComponent,
-    ObservableComponent
+    ObservableComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,
     AppRoutingModule, FormsModule
   ],
-  providers: [],
+  providers: [provideHttpClient(withInterceptorsFromDi())],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
