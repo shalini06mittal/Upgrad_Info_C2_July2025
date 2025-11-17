@@ -1,0 +1,20 @@
+<h3>Add a new Post</h3>
+<hr>
+{{postform.value | json}}
+<form action="" #postform="ngForm" (submit)="addPost(postform.value)">
+    <div class="mb-3">
+        <input type="text" name="title" class="form-control" 
+               placeholder="Enter Title" ngModel
+            required id="">
+    </div>
+    <!-- {{title.className}} -->
+    <div class="mb-3">
+        <input type="text" name="body" class="form-control"  ngModel
+               placeholder="Enter body" required/>
+    </div>
+   
+    <div class="mb-3">
+        <input type="submit" value="Add" class="btn btn-primary">
+    </div>
+</form>
+<hr>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from '../http/user.service';
+import { PostService } from '../http/post.service';
 
 @Component({
   selector: 'app-post',
@@ -10,7 +10,7 @@ import { UserService } from '../http/user.service';
 export class PostComponent implements OnInit{
 
   posts:any = undefined;
-  constructor(private us:UserService){
+  constructor(private us:PostService){
 
   }
   ngOnInit(): void {

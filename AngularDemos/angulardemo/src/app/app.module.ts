@@ -19,6 +19,7 @@ import { ServiceComponent } from './services/service.component';
 import { ObservableComponent } from './observable/observable.component';
 import { PostComponent } from './post/post.component';
 import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { AddpostComponent } from './addpost/addpost.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@an
     ReactiveComponent,
     ServiceComponent,
     ObservableComponent,
-    PostComponent
+    PostComponent,
+    AddpostComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,
