@@ -13,11 +13,19 @@
     <p>No Books Added</p>
 </div>
 
-<ng-template #books>
+<!-- <ng-template #books>
     <div *ngFor="let book of blist" class="mt-3">
         <app-book [book]="book"></app-book>
         <button class="btn btn-primary" 
         (click)="addToFavorite(book.bookid)">{{book.isFav ? 'Remove':'Add to Fav'}}</button>
+        <hr/>
+    </div>
+</ng-template> -->
+<ng-template #books>
+    <div *ngFor="let book of blist" class="mt-3 row">
+        
+        <p>Title : {{book.title}}</p>
+        <p><button class="btn btn-primary" (click)="getBookDetails(book.bookid)">More details</button></p>
         <hr/>
     </div>
 </ng-template>

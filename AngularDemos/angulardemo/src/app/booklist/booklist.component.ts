@@ -2,6 +2,7 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
 import { Book } from '../model/Book';
 import { books } from '../model/data';
 import { BookService } from '../http/book.service';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-booklist',
@@ -19,7 +20,7 @@ export class BooklistComponent implements OnChanges, OnInit{
     id:number = 0;
     delid:number = 0;
     favorite:string='Add To Favorite'
-    constructor(private bs:BookService){
+    constructor(private bs:BookService, private router:Router, private route:ActivatedRoute){
      // this.blist= books;
     }
   ngOnInit(): void {
@@ -49,5 +50,12 @@ export class BooklistComponent implements OnChanges, OnInit{
               
           }
       }
+    }
+
+    getBookDetails(id:number){
+      console.log(id)
+
+      this.router.navigate([id], {relativeTo:this.route})
+
     }
 }

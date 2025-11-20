@@ -15,6 +15,7 @@ public class BookService {
 	public BookService() {
 		System.out.println("Book service default constructor");
 		bookList = new ArrayList<>();
+		bookList.add(new Book(1, "Core Java", "Hotsmann","Learn java fundamentals", 130.0));
 		bookList.add( new Book(1, "Core Java", "Hotsmann","Learn java fundamentals", 130.0));
 		bookList.add( new Book(2,"HTML", "Kelly","Learn html for UI", 230.0));
 		bookList.add( new Book( 3, "python", "ryan","Learn python fundamentals", 130.0));

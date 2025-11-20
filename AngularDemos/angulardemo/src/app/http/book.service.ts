@@ -14,5 +14,13 @@ export class BookService {
   getBooks():Observable<Book[]>{
     return this.http.get<Book[]>(`${this.url}`)
   }
+
+  addBook(book:Book):Observable<Book>{
+    return this.http.post<Book>(this.url, book);
+  }
+
+  getBookById(id:number):Observable<any>{
+    return this.http.get<any>(this.url+'/'+id);
+  }
  
 }

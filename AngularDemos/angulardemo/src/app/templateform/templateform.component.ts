@@ -1,5 +1,6 @@
 import { Component, EventEmitter, HostListener, OnDestroy, OnInit, Output } from '@angular/core';
 import { Book } from '../model/Book';
+import { BookService } from '../http/book.service';
 
 @Component({
   selector: 'app-templateform',
@@ -8,6 +9,10 @@ import { Book } from '../model/Book';
   styleUrl: './templateform.component.css'
 })
 export class TemplateformComponent implements OnInit{
+  
+  constructor(private bs:BookService){
+
+  }
   
 
   @HostListener('window:beforeunload', ['$event'])
@@ -29,8 +34,8 @@ export class TemplateformComponent implements OnInit{
   emitBookAdded : EventEmitter<Book> = new EventEmitter();
   addBook(newBook:Book){
     console.log(newBook)
-    
-    this.emitBookAdded.emit(newBook);
+    this.bs.addBook(newBook).subscribe(data => console.log(data))
+    //this.emitBookAdded.emit(newBook);
   }
 
 

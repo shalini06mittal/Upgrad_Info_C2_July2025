@@ -22,6 +22,7 @@ import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@an
 import { AddpostComponent } from './addpost/addpost.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { RegisterComponent } from './register/register.component';
     PostComponent,
     AddpostComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule, ReactiveFormsModule,
