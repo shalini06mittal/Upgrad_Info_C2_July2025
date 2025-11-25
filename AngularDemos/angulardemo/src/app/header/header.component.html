@@ -12,14 +12,14 @@
         <li class="nav-item">
           <a class="nav-link" href="add">Add Book</a>
         </li>
-        <li class="nav-item">
+        <li *ngIf="!us.isAuthenticated()" class="nav-item">
           <a class="nav-link" href="register">Register</a>
         </li>
-        <li class="nav-item">
+        <li *ngIf="!us.isAuthenticated()" class="nav-item">
           <a class="nav-link" href="login">Login</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="logout">Logout</a>
+        <li *ngIf="us.isAuthenticated()" class="nav-item">
+          <a class="nav-link" href="logout" (click)="us.logout()">Logout</a>
         </li>
       </ul>
     </div>
