@@ -20,7 +20,8 @@ export class BooklistComponent implements OnChanges, OnInit{
     id:number = 0;
     delid:number = 0;
     favorite:string='Add To Favorite'
-    constructor(private bs:BookService, private router:Router, private route:ActivatedRoute){
+    constructor(private bs:BookService, private router:Router, 
+      private route:ActivatedRoute){
      // this.blist= books;
     }
   ngOnInit(): void {
